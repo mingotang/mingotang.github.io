@@ -3,15 +3,16 @@
 
 
     
+    
   <url>
-    <loc>http://mingotang.github.io/2017/09/03/MarkDown%E8%A1%A8%E8%BE%BE/</loc>
-    <lastmod>2017-09-04T14:51:05.000Z</lastmod>
+    <loc>http://mingotang.github.io/2017/09/06/%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/</loc>
+    <lastmod>2017-09-06T07:21:36.000Z</lastmod>
     <data>
         <display>
-        <title>MarkDown表达</title>
-        <pubTime>2017-09-03T06:43:19.000Z</pubTime>
+        <title>数据集下载链接汇总</title>
+        <pubTime>2017-09-06T07:04:43.000Z</pubTime>
         
-        <tag>Notes</tag>
+        <tag>Collection</tag>
          
          
            
@@ -22,7 +23,7 @@
     
   <url>
     <loc>http://mingotang.github.io/2015/10/19/Hexo%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2017-09-03T07:15:33.000Z</lastmod>
+    <lastmod>2017-09-04T14:53:51.000Z</lastmod>
     <data>
         <display>
         <title>Hexo使用方式</title>
@@ -37,5 +38,21 @@
     </url>
 
     
+  <url>
+    <loc>http://mingotang.github.io/2017/09/03/MarkDown%E8%A1%A8%E8%BE%BE/</loc>
+    <lastmod>2017-09-04T14:53:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>MarkDown表达</title>
+        <pubTime>2017-09-03T06:43:19.000Z</pubTime>
+        
+        <tag>Notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
 </urlset>
