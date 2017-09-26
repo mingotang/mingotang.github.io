@@ -54,7 +54,7 @@
     <link href="http://mingotang.github.io/2017/09/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E5%8F%8ASAS%E5%BA%94%E7%94%A8/"/>
     <id>http://mingotang.github.io/2017/09/25/数据库基础及SAS应用/</id>
     <published>2017-09-25T03:09:18.000Z</published>
-    <updated>2017-09-26T06:27:03.000Z</updated>
+    <updated>2017-09-26T06:30:15.000Z</updated>
     
     <content type="html"><![CDATA[<p>数据库基础及SAS应用课程信息</p>
 <a id="more"></a>
@@ -93,7 +93,8 @@
 <div class="note warning"><br>    <h5>请严格按照 <code>DBMSSAS+C1/C2+学号+姓名+作业编号</code> 命名邮件标题和附件</h5><br>    <p>我会在作业提交时间截止时间之后查阅作业并作出回复，所有按照上述规则命名的邮件将自动进入我邮箱的单独文件夹，所以作业提交不按照上述规则命名的话邮件会进入我的收件箱因此可能会被漏掉，同时在学期结束之前检查作业提交情况时我会依照关键字 DBMSSAS 和 姓名 来检索邮件</p><br></div>
 
 
-<h2 id="作业参考答案"><a href="#作业参考答案" class="headerlink" title="作业参考答案"></a><em>作业参考答案</em></h2><ul>
+<h2 id="作业参考答案"><a href="#作业参考答案" class="headerlink" title="作业参考答案"></a><em>作业参考答案</em></h2><p>有时候这个页面没有变化请删除cookies或者刷新，作业参考答案会在作业截止时间之后不久放出。</p>
+<ul>
 <li><a href="http://mingotang.website/2017/09/26/DBMSSAS-Assignment1/" target="_blank" rel="external">DBMSSAS Assignment1(2017年09月26日8点前提交)</a></li>
 </ul>
 ]]></content>
