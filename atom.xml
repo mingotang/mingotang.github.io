@@ -5,7 +5,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://mingotang.github.io/"/>
-  <updated>2017-09-25T00:59:40.000Z</updated>
+  <updated>2017-09-26T06:10:59.000Z</updated>
   <id>http://mingotang.github.io/</id>
   
   <author>
@@ -16,11 +16,104 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>DBMSSAS Assignment1</title>
+    <link href="http://mingotang.github.io/2017/09/26/DBMSSAS-Assignment1/"/>
+    <id>http://mingotang.github.io/2017/09/26/DBMSSAS-Assignment1/</id>
+    <published>2017-09-26T05:57:09.000Z</published>
+    <updated>2017-09-26T06:10:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>软件安装部分提示和注意事项</p>
+<a id="more"></a>
+<p>请前往 链接:<a href="https://yun.baidu.com/s/1jHEyYTS" target="_blank" rel="external">https://yun.baidu.com/s/1jHEyYTS</a> 密码:u9m4 下载 SQL和SAS软件</p>
+<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a><em>软件安装</em></h2><p><code>SQL</code></p>
+<p>Windows系统请安装百度云当中的SQL2008版，安装之时注意：</p>
+<ul>
+<li>遇到无法重启问题请参考：<a href="http://jingyan.baidu.com/article/a24b33cd52a0b919fe002bae.html" target="_blank" rel="external">http://jingyan.baidu.com/article/a24b33cd52a0b919fe002bae.html</a></li>
+<li>连接权限妥善设置，偷懒一点的可以设置为windows用户直接登录（添加当前用户按钮）</li>
+<li>安装完成之后连接本地服务器 <code>(local)</code></li>
+</ul>
+<p>Mac系统可以使用DBeaver+MySQL的方式代替，请参考：<a href="http://mingotang.website/attachments/MacOS_MySql连接和使用示例.docx" target="_blank" rel="external">http://mingotang.website/attachments/MacOS_MySql连接和使用示例.docx</a></p>
+<p><code>SAS</code></p>
+<p>Windows系统请安装百度云当中的SAS 9.21版</p>
+<p>Mac系统可以使用 <a href="https://www.sas.com/en_us/software/university-edition/download-software.html#os-x" target="_blank" rel="external">SAS University Edition</a> 代替</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;软件安装部分提示和注意事项&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="TA" scheme="http://mingotang.github.io/tags/TA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库基础及SAS应用</title>
+    <link href="http://mingotang.github.io/2017/09/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E5%8F%8ASAS%E5%BA%94%E7%94%A8/"/>
+    <id>http://mingotang.github.io/2017/09/25/数据库基础及SAS应用/</id>
+    <published>2017-09-25T03:09:18.000Z</published>
+    <updated>2017-09-26T06:12:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>数据库基础及SAS应用课程信息</p>
+<a id="more"></a>
+<h2 id="课程相关"><a href="#课程相关" class="headerlink" title="课程相关"></a><em>课程相关</em></h2><p>教学班 001：</p>
+<ul>
+<li>行课安排：1-16 周</li>
+<li>时间：周五 1-3 节</li>
+<li>地点：上院 210</li>
+</ul>
+<p>教学班 002：</p>
+<ul>
+<li>行课安排：1-16 周</li>
+<li>时间：周五 6-8 节</li>
+<li>地点：上院 210</li>
+</ul>
+<p>授课教授<code>胡代平</code><br>联系方式：</p>
+<ul>
+<li>E-mail: <a href="mailto:dphu@sjtu.edu.cn" target="_blank" rel="external">dphu@sjtu.edu.cn</a></li>
+<li>办公室：徐汇校区 安泰经济与管理学院 1711</li>
+</ul>
+<p>助教<code>唐铭</code><br>联系方式：</p>
+<ul>
+<li>E-mail: <a href="mailto:mtang024@126.com" target="_blank" rel="external">mtang024@126.com</a>  （除作业之外的邮件可以确保24小时内回复）</li>
+<li>Skype: mingotang</li>
+</ul>
+<blockquote>
+<p>课程资料链接：<a href="https://yun.baidu.com/s/1jHEyYTS" target="_blank" rel="external">百度云：https://yun.baidu.com/s/1jHEyYTS</a>  密码: u9m4</p>
+</blockquote>
+<h2 id="作业相关"><a href="#作业相关" class="headerlink" title="作业相关"></a><em>作业相关</em></h2><p>作业提交：</p>
+<ul>
+<li>请在作业截止时间之前把作业发送到 <a href="mailto:mtang024@126.com" target="_blank" rel="external">mtang024@126.com</a>，迟交作业将会按照迟交时间多少扣除一部分作业分数，抄袭作业将会失去大部分作业分数</li>
+<li>作业邮件<code>标题</code>和<code>附件</code>请使用 <code>DBMSSAS+C1/C2+学号+姓名+作业编号（编号之前不需要补0）</code> 格式来命名（加号其实是一个空格），例如：<code>DBMSSAS C1 51616161616 姓名 1</code>；非作业提交邮件邮件标题请勿使用这个规则</li>
+<li>一般情况下，请把作业涉及到的文字、图片和代码写在<code>word</code>文件里面；如果把文字和代码写在文本文件里面，请在邮件正文<code>注明文本编码</code>（例如 utf-8 或者 gb18030），若除了文本文件之外还有其他文件（依然建议把sas等文件内容写在word里面），请把所有文件放在一个zip压缩包里面</li>
+</ul>
+<div class="note warning"><br>    <h5>请严格按照 <code>DBMSSAS+C1/C2+学号+姓名+作业编号</code> 命名邮件标题和附件</h5><br>    <p>我会在作业提交时间截止时间之后查阅作业并作出回复，所有按照上述规则命名的邮件将自动进入我邮箱的单独文件夹，所以作业提交不按照上述规则命名的话邮件会进入我的收件箱因此可能会被漏掉，同时在学期结束之前检查作业提交情况时我会依照关键字 DBMSSAS 和 姓名 来检索邮件</p><br></div>
+
+
+<h2 id="作业参考答案"><a href="#作业参考答案" class="headerlink" title="作业参考答案"></a><em>作业参考答案</em></h2><ul>
+<li><a href="http://mingotang.website/2017/09/26/DBMSSAS-Assignment1/" target="_blank" rel="external">DBMSSAS Assignment1(2017年09月26日8点前提交)</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;数据库基础及SAS应用课程信息&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="TA" scheme="http://mingotang.github.io/tags/TA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python相关技巧</title>
     <link href="http://mingotang.github.io/2017/09/15/python%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/"/>
     <id>http://mingotang.github.io/2017/09/15/python相关技巧/</id>
     <published>2017-09-15T07:38:39.000Z</published>
-    <updated>2017-09-25T00:59:40.000Z</updated>
+    <updated>2017-09-25T03:14:10.000Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>
 <h2 id="pip-and-packages"><a href="#pip-and-packages" class="headerlink" title="pip and packages"></a>pip and packages</h2><p>获取python运行环境下的扩展包：<code>$ pip freeze &gt; requirements.txt</code></p>
@@ -36,7 +129,7 @@
     </summary>
     
     
-      <category term="Python" scheme="http://mingotang.github.io/tags/Python/"/>
+      <category term="Notes" scheme="http://mingotang.github.io/tags/Notes/"/>
     
   </entry>
   
@@ -45,7 +138,7 @@
     <link href="http://mingotang.github.io/2017/09/14/Pandas-Cheat-List/"/>
     <id>http://mingotang.github.io/2017/09/14/Pandas-Cheat-List/</id>
     <published>2017-09-14T03:08:41.000Z</published>
-    <updated>2017-09-16T02:12:56.000Z</updated>
+    <updated>2017-09-25T03:14:00.000Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>
 <h2 id="class-DataFrame"><a href="#class-DataFrame" class="headerlink" title="class - DataFrame"></a>class - DataFrame</h2><p>A pandas DataFrame is a data structure, which is a labeled two-dimensional object and is similar in spirit to an Excel worksheet or a relational database table.</p>
@@ -77,7 +170,7 @@
     </summary>
     
     
-      <category term="Python" scheme="http://mingotang.github.io/tags/Python/"/>
+      <category term="Notes" scheme="http://mingotang.github.io/tags/Notes/"/>
     
   </entry>
   
@@ -86,7 +179,7 @@
     <link href="http://mingotang.github.io/2017/09/12/NumPy-Arrays-Cheat-List/"/>
     <id>http://mingotang.github.io/2017/09/12/NumPy-Arrays-Cheat-List/</id>
     <published>2017-09-12T08:38:56.000Z</published>
-    <updated>2017-09-14T03:26:48.000Z</updated>
+    <updated>2017-09-25T03:13:52.000Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>
 <h2 id="The-NumPy-array-object"><a href="#The-NumPy-array-object" class="headerlink" title="The NumPy array object"></a>The NumPy array object</h2><hr>
@@ -173,7 +266,7 @@
 <h3 id="class-matrice"><a href="#class-matrice" class="headerlink" title="class - matrice"></a>class - matrice</h3><h4 id="creation-1"><a href="#creation-1" class="headerlink" title="creation:"></a>creation:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mat(<span class="string">'x x; x x; x x'</span>)</div><div class="line"></div><div class="line">eye(int)  <span class="comment"># I with scale int</span></div></pre></td></tr></table></figure>
 <h4 id="linear-algebra"><a href="#linear-algebra" class="headerlink" title="linear algebra:"></a>linear algebra:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">np.linalg.inv(matrice)  <span class="comment"># inverse of matrice</span></div><div class="line"></div><div class="line">np.linalg.solve(A, b)  <span class="comment"># solve A * x = b</span></div><div class="line"></div><div class="line">np.linalg.dot(A, x)  <span class="comment"># calcuate A * x</span></div><div class="line"></div><div class="line">np.linalg.eigvals(A)  <span class="comment"># eigenvalues of A</span></div><div class="line"></div><div class="line">np.linalg.eig(A)  <span class="comment"># eigenvalues and eigenvectors of A</span></div></pre></td></tr></table></figure>
 <h3 id="class-random"><a href="#class-random" class="headerlink" title="class - random"></a>class - random</h3><h4 id="random-functions"><a href="#random-functions" class="headerlink" title="random functions:"></a>random functions:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">normal(size=<span class="number">1000</span>)</div><div class="line"></div><div class="line">binomial(<span class="number">9</span>, <span class="number">0.5</span>, size=<span class="number">1000</span>)</div></pre></td></tr></table></figure>
-<h4 id="Test"><a href="#Test" class="headerlink" title="Test:"></a>Test:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">	<span class="keyword">from</span> scipy.stats <span class="keyword">import</span> shapiro</div><div class="line"></div><div class="line"><span class="comment"># The Shapiro-Wilk test can check for normality. </span></div><div class="line"><span class="comment"># The corresponding SciPy function returns a tuple of which the  rst number is a test statistic and the second number is a p-value.</span></div><div class="line"></div><div class="line">	<span class="keyword">from</span> scipy.stats <span class="keyword">import</span> anderson</div><div class="line"></div><div class="line"><span class="comment"># The Anderson-Darling test can check for normality and also for other distributions such as Exponential, Logistic, and Gumbel. </span></div><div class="line"><span class="comment"># The related SciPy function related a test statistic and an array containing critical values for the 15, 10, 5, 2.5, and 1 percentage signi cance levels. </span></div><div class="line"></div><div class="line">	<span class="keyword">from</span> scipy.stats <span class="keyword">import</span> normaltest</div><div class="line"></div><div class="line"><span class="comment"># The D'Agostino and Pearson's test is also implemented in SciPy as the normaltest() function. </span></div><div class="line"><span class="comment"># This function returns a tuple with a statistic and p-value just like the shapiro() function. The p-value is a two-sided Chi-squared probability.</span></div></pre></td></tr></table></figure>
+<h4 id="Test"><a href="#Test" class="headerlink" title="Test:"></a>Test:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">	<span class="keyword">from</span> scipy.stats <span class="keyword">import</span> shapiro</div><div class="line"></div><div class="line"><span class="comment"># The Shapiro-Wilk test can check for normality.</span></div><div class="line"><span class="comment"># The corresponding SciPy function returns a tuple of which the  rst number is a test statistic and the second number is a p-value.</span></div><div class="line"></div><div class="line">	<span class="keyword">from</span> scipy.stats <span class="keyword">import</span> anderson</div><div class="line"></div><div class="line"><span class="comment"># The Anderson-Darling test can check for normality and also for other distributions such as Exponential, Logistic, and Gumbel.</span></div><div class="line"><span class="comment"># The related SciPy function related a test statistic and an array containing critical values for the 15, 10, 5, 2.5, and 1 percentage signi cance levels.</span></div><div class="line"></div><div class="line">	<span class="keyword">from</span> scipy.stats <span class="keyword">import</span> normaltest</div><div class="line"></div><div class="line"><span class="comment"># The D'Agostino and Pearson's test is also implemented in SciPy as the normaltest() function.</span></div><div class="line"><span class="comment"># This function returns a tuple with a statistic and p-value just like the shapiro() function. The p-value is a two-sided Chi-squared probability.</span></div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
@@ -184,7 +277,7 @@
     </summary>
     
     
-      <category term="Python" scheme="http://mingotang.github.io/tags/Python/"/>
+      <category term="Notes" scheme="http://mingotang.github.io/tags/Notes/"/>
     
   </entry>
   
@@ -193,7 +286,7 @@
     <link href="http://mingotang.github.io/2017/09/11/Aprior%E7%AE%97%E6%B3%95/"/>
     <id>http://mingotang.github.io/2017/09/11/Aprior算法/</id>
     <published>2017-09-11T11:28:12.000Z</published>
-    <updated>2017-09-11T11:36:11.000Z</updated>
+    <updated>2017-09-25T03:13:01.000Z</updated>
     
     <content type="html"><![CDATA[<p>关联规则挖掘在电商、零售、大气物理、生物医学已经有了广泛的应用。</p>
 <p>啤酒与尿布的故事已经成为了关联规则挖掘的经典案例，还有人专门出了一本书《啤酒与尿布》，虽然说这个故事是哈弗商学院杜撰出来的，但确实能很好的解释关联规则挖掘的原理。</p>
@@ -235,7 +328,7 @@
     </summary>
     
     
-      <category term="Algorithm" scheme="http://mingotang.github.io/tags/Algorithm/"/>
+      <category term="COLLECTION" scheme="http://mingotang.github.io/tags/COLLECTION/"/>
     
   </entry>
   
@@ -244,7 +337,7 @@
     <link href="http://mingotang.github.io/2017/09/11/python%E6%93%8D%E4%BD%9C%E7%AC%A6%E9%87%8D%E8%BD%BD/"/>
     <id>http://mingotang.github.io/2017/09/11/python操作符重载/</id>
     <published>2017-09-11T00:50:21.000Z</published>
-    <updated>2017-09-11T01:37:41.000Z</updated>
+    <updated>2017-09-25T03:13:45.000Z</updated>
     
     <content type="html"><![CDATA[<p>转载自：<a href="http://blog.csdn.net/Rozol/article/details/70769628" target="_blank" rel="external">http://blog.csdn.net/Rozol/article/details/70769628</a></p>
 <a id="more"></a>
@@ -268,7 +361,7 @@
     </summary>
     
     
-      <category term="Python" scheme="http://mingotang.github.io/tags/Python/"/>
+      <category term="Notes" scheme="http://mingotang.github.io/tags/Notes/"/>
     
   </entry>
   
@@ -326,7 +419,7 @@
     <link href="http://mingotang.github.io/2017/09/08/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%92%8C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%86%E5%9F%9F%E5%B8%B8%E7%94%A8%E7%9A%84Python%E5%BA%93/"/>
     <id>http://mingotang.github.io/2017/09/08/数据科学和机器学习领域常用的Python库/</id>
     <published>2017-09-08T08:02:32.000Z</published>
-    <updated>2017-09-09T03:31:50.000Z</updated>
+    <updated>2017-09-25T03:26:18.000Z</updated>
     
     <content type="html"><![CDATA[<p>这篇文章将会针对数据科学介绍几种常用的 Python 包。在与数据挖掘、机器学习以及数据分析相关的项目中，这些 Python 包通常会得到广泛应用。</p>
 <a id="more"></a>
@@ -404,7 +497,7 @@
     </summary>
     
     
-      <category term="Python" scheme="http://mingotang.github.io/tags/Python/"/>
+      <category term="COLLECTION" scheme="http://mingotang.github.io/tags/COLLECTION/"/>
     
   </entry>
   
@@ -656,7 +749,7 @@
     <link href="http://mingotang.github.io/2017/09/07/33%E6%AC%BE%E5%BC%80%E6%BA%90%E7%88%AC%E8%99%AB%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
     <id>http://mingotang.github.io/2017/09/07/33款开源爬虫软件工具/</id>
     <published>2017-09-07T13:53:19.000Z</published>
-    <updated>2017-09-07T14:50:17.000Z</updated>
+    <updated>2017-09-25T03:13:07.000Z</updated>
     
     <content type="html"><![CDATA[<p>本文对较为知名及常见的开源爬虫软件进行梳理，按开发语言进行汇总。虽然搜索引擎也有爬虫，但这里只是爬虫软件，而非大型、复杂的搜索引擎。</p>
 <a id="more"></a>
@@ -1070,7 +1163,7 @@
     </summary>
     
     
-      <category term="Collection" scheme="http://mingotang.github.io/tags/Collection/"/>
+      <category term="COLLECTION" scheme="http://mingotang.github.io/tags/COLLECTION/"/>
     
   </entry>
   
@@ -1079,7 +1172,7 @@
     <link href="http://mingotang.github.io/2017/09/06/%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/"/>
     <id>http://mingotang.github.io/2017/09/06/数据集下载链接汇总/</id>
     <published>2017-09-06T07:04:43.000Z</published>
-    <updated>2017-09-06T07:21:36.000Z</updated>
+    <updated>2017-09-25T03:12:59.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h2><ul>
 <li><a href="http://www.sogou.com/labs/" target="_blank" rel="external">搜狗实验室</a></li>
@@ -1094,7 +1187,7 @@
 <h2 id="社会科学"><a href="#社会科学" class="headerlink" title="社会科学"></a>社会科学</h2><p>综合社会调查<br><a href="http://www3.norc.org/GSS" target="_blank" rel="external">http://www3.norc.org/GSS</a> +网站/<br>ICPSR<br><a href="http://www.icpsr.umich.edu/icpsrweb/ICPSR/access/index.jsp" target="_blank" rel="external">http://www.icpsr.umich.edu/icpsrweb/ICPSR/access/index.jsp</a><br>皮尤研究<br><a href="http://www.pewinternet.org/datasets/pages/2/" target="_blank" rel="external">http://www.pewinternet.org/datasets/pages/2/</a><br>加州大学洛杉矶分校的社会科学档案<br><a href="http://dataarchives.ss.ucla.edu/Home.DataPortals.html" target="_blank" rel="external">http://dataarchives.ss.ucla.edu/Home.DataPortals.html</a><br>UPJOHN本月<br><a href="http://www.upjohn.org/erdc/erdc.html" target="_blank" rel="external">http://www.upjohn.org/erdc/erdc.html</a></p>
 <h2 id="时间序列"><a href="#时间序列" class="headerlink" title="时间序列"></a>时间序列</h2><p>时间序列数据库<br><a href="http://robjhyndman.com/TSDL/" target="_blank" rel="external">http://robjhyndman.com/TSDL/</a><br>澳大利亚手语数据<br><a href="http://kdd.ics.uci.edu/databases/auslan/auslan.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/auslan/auslan.html</a><br>高质量的澳大利亚手语数据<br><a href="http://kdd.ics.uci.edu/databases/auslan2/auslan.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/auslan2/auslan.html</a><br>脑电图数据<br><a href="http://kdd.ics.uci.edu/databases/eeg/eeg.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/eeg/eeg.html</a><br>日本的元音<br><a href="http://kdd.ics.uci.edu/databases/JapaneseVowels/JapaneseVowels.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/JapaneseVowels/JapaneseVowels.html</a><br>Pioneer-1移动机器人数据<br><a href="http://kdd.ics.uci.edu/databases/pioneer/pioneer.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/pioneer/pioneer.html</a><br>伪周期合成时间序列<br><a href="http://kdd.ics.uci.edu/databases/synthetic/synthetic.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/synthetic/synthetic.html</a><br>合成控制图时间序列<br><a href="http://kdd.ics.uci.edu/databases/synthetic_control/synthetic_control.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/synthetic_control/synthetic_control.html</a></p>
 <h2 id="大学"><a href="#大学" class="headerlink" title="大学"></a>大学</h2><p>卡内基梅隆大学安然电子邮件<br><a href="http://www.cs.cmu.edu/~安然/" target="_blank" rel="external">http://www.cs.cmu.edu/~安然/</a><br>卡内基梅隆大学StatLab<br><a href="http://lib.stat.cmu.edu/datasets/" target="_blank" rel="external">http://lib.stat.cmu.edu/datasets/</a><br>龙骨存储库<br><a href="http://sci2s.ugr.es/keel/datasets.php" target="_blank" rel="external">http://sci2s.ugr.es/keel/datasets.php</a><br>卡内基梅隆大学JASA数据归档<br><a href="http://lib.stat.cmu.edu/jasadata/" target="_blank" rel="external">http://lib.stat.cmu.edu/jasadata/</a><br>俄亥俄州立大学财务数据<br><a href="http://fisher.osu.edu/fin/osudata.htm" target="_blank" rel="external">http://fisher.osu.edu/fin/osudata.htm</a><br>加州大学伯克利分校<br><a href="http://ucdata.berkeley.edu/" target="_blank" rel="external">http://ucdata.berkeley.edu/</a><br>加州大学洛杉矶分校<br> <a href="http://aws.amazon.com/datasets" target="_blank" rel="external">http://aws.amazon.com/datasets</a><br>加州大学河滨分校时间序列<br><a href="http://www.cs.ucr.edu/" target="_blank" rel="external">http://www.cs.ucr.edu/</a> / time_series_data /<br>多伦多大学<br><a href="http://www.cs.toronto.edu/深入/数据/datasets.html" target="_blank" rel="external">http://www.cs.toronto.edu/深入/数据/datasets.html</a><br>UCI知识发现(KDD)归档<br><a href="http://kdd.ics.uci.edu/" target="_blank" rel="external">http://kdd.ics.uci.edu/</a><br>信息和计算机科学<br><a href="http://www.ics.uci.edu/" target="_blank" rel="external">http://www.ics.uci.edu/</a><br>加州大学欧文分校<br><a href="https://uci.edu/" target="_blank" rel="external">https://uci.edu/</a></p>
-<h2 id="互联网相关数据集"><a href="#互联网相关数据集" class="headerlink" title="互联网相关数据集"></a>互联网相关数据集</h2><p>Dataset for “Statistics and SocialNetwork of YouTube Videos”<br><a href="http://netsg.cs.sfu.ca/youtubedata/" target="_blank" rel="external">http://netsg.cs.sfu.ca/youtubedata/</a><br>1998 World Cup Web Site Access Logs<br><a href="http://ita.ee.lbl.gov/html/contrib/WorldCup.html" target="_blank" rel="external">http://ita.ee.lbl.gov/html/contrib/WorldCup.html</a><br>（从1998/04/26 到 1998/07/26 的92天中，发生了 1,352,804,107次请求）<br>Page view statistics for Wikimedia projects<br><a href="http://dammit.lt/wikistats/" target="_blank" rel="external">http://dammit.lt/wikistats/</a><br>AOL Search Query Logs - RP<br><a href="http://www.researchpipeline.com/mediawiki/index.php?title=AOL_Search_Query_Logs" target="_blank" rel="external">http://www.researchpipeline.com/mediawiki/index.php?title=AOL_Search_Query_Logs</a><br>livedoor gourmet<br><a href="http://blog.livedoor.jp/techblog/archives/65836960.html" target="_blank" rel="external">http://blog.livedoor.jp/techblog/archives/65836960.html</a> </p>
+<h2 id="互联网相关数据集"><a href="#互联网相关数据集" class="headerlink" title="互联网相关数据集"></a>互联网相关数据集</h2><p>Dataset for “Statistics and SocialNetwork of YouTube Videos”<br><a href="http://netsg.cs.sfu.ca/youtubedata/" target="_blank" rel="external">http://netsg.cs.sfu.ca/youtubedata/</a><br>1998 World Cup Web Site Access Logs<br><a href="http://ita.ee.lbl.gov/html/contrib/WorldCup.html" target="_blank" rel="external">http://ita.ee.lbl.gov/html/contrib/WorldCup.html</a><br>（从1998/04/26 到 1998/07/26 的92天中，发生了 1,352,804,107次请求）<br>Page view statistics for Wikimedia projects<br><a href="http://dammit.lt/wikistats/" target="_blank" rel="external">http://dammit.lt/wikistats/</a><br>AOL Search Query Logs - RP<br><a href="http://www.researchpipeline.com/mediawiki/index.php?title=AOL_Search_Query_Logs" target="_blank" rel="external">http://www.researchpipeline.com/mediawiki/index.php?title=AOL_Search_Query_Logs</a><br>livedoor gourmet<br><a href="http://blog.livedoor.jp/techblog/archives/65836960.html" target="_blank" rel="external">http://blog.livedoor.jp/techblog/archives/65836960.html</a></p>
 <h2 id="离散序列数据"><a href="#离散序列数据" class="headerlink" title="离散序列数据"></a>离散序列数据</h2><p>UNIX用户数据<br><a href="http://kdd.ics.uci.edu/databases/UNIX_user_data/UNIX_user_data.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/UNIX_user_data/UNIX_user_data.html</a><br>主菜芝加哥推荐数据<br><a href="http://kdd.ics.uci.edu/databases/entree/entree.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/entree/entree.html</a></p>
 <h2 id="多元数据"><a href="#多元数据" class="headerlink" title="多元数据"></a>多元数据</h2><p>人口收入调查数据库<br><a href="http://kdd.ics.uci.edu/databases/census-income/census-income.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/census-income/census-income.html</a><br>线圈数据<br><a href="http://kdd.ics.uci.edu/databases/coil/coil.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/coil/coil.html</a><br>Corel图像特征<br><a href="http://kdd.ics.uci.edu/databases/CorelFeatures/CorelFeatures.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/CorelFeatures/CorelFeatures.html</a><br>森林CoverType<br><a href="http://kdd.ics.uci.edu/databases/covertype/covertype.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/covertype/covertype.html</a><br>保险公司基准(2000卷)<br><a href="http://kdd.ics.uci.edu/databases/tic/tic.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/tic/tic.html</a><br>互联网使用数据<br><a href="http://kdd.ics.uci.edu/databases/internet_usage/internet_usage.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/internet_usage/internet_usage.html</a><br>IPUMS人口普查数据<br><a href="http://kdd.ics.uci.edu/databases/ipums/ipums.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/ipums/ipums.html</a><br>KDD CUP 1998数据<br><a href="http://kdd.ics.uci.edu/databases/kddcup98/kddcup98.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/kddcup98/kddcup98.html</a><br>KDD CUP 1999数据<br><a href="http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html</a><br>1990年美国人口普查数据<br><a href="http://kdd.ics.uci.edu/databases/census1990/USCensus1990.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/census1990/USCensus1990.html</a></p>
 <h2 id="关系数据"><a href="#关系数据" class="headerlink" title="关系数据"></a>关系数据</h2><p>大肠杆菌基因<br><a href="http://kdd.ics.uci.edu/databases/ecoli/ecoli.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/ecoli/ecoli.html</a><br>结核分枝杆菌基因<br><a href="http://kdd.ics.uci.edu/databases/tb/tb.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/tb/tb.html</a><br>电影<br><a href="http://kdd.ics.uci.edu/databases/movies/movies.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/movies/movies.html</a><br>MovieLens数据集<br><a href="http://datahub.io/dataset/movielens" target="_blank" rel="external">http://datahub.io/dataset/movielens</a><br>厄尔尼诺现象的数据<br><a href="http://kdd.ics.uci.edu/databases/el_nino/el_nino.html" target="_blank" rel="external">http://kdd.ics.uci.edu/databases/el_nino/el_nino.html</a></p>
@@ -1109,7 +1202,7 @@
     </summary>
     
     
-      <category term="Collection" scheme="http://mingotang.github.io/tags/Collection/"/>
+      <category term="COLLECTION" scheme="http://mingotang.github.io/tags/COLLECTION/"/>
     
   </entry>
   
@@ -1118,7 +1211,7 @@
     <link href="http://mingotang.github.io/2017/09/03/MarkDown%E8%A1%A8%E8%BE%BE/"/>
     <id>http://mingotang.github.io/2017/09/03/MarkDown表达/</id>
     <published>2017-09-03T06:43:19.000Z</published>
-    <updated>2017-09-04T14:53:48.000Z</updated>
+    <updated>2017-09-25T03:21:25.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># 一级标题</div><div class="line">## 二级标题</div><div class="line">### 三级标题</div><div class="line">#### 四级标题</div></pre></td></tr></table></figure>
 <p><code>重点</code></p>
@@ -1139,6 +1232,10 @@
 </table>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">|表格1|表格2|</div><div class="line">|---|---|</div><div class="line">|*|*|</div></pre></td></tr></table></figure>
 <p><a href="链接内容">链接文字</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[链接文字](链接内容)</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>注意</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt; 注意</div></pre></td></tr></table></figure>
 <h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><div class="note"><br>    <h5>标题</h5><br>    <p>内容</p><br></div>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;note&quot;&gt;</div><div class="line">    &lt;h5&gt;标题&lt;/h5&gt;</div><div class="line">    &lt;p&gt;内容&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>

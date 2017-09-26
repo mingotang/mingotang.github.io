@@ -4,14 +4,82 @@
 
     
   <url>
+    <loc>http://mingotang.github.io/2017/09/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E5%8F%8ASAS%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2017-09-26T06:12:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>数据库基础及SAS应用</title>
+        <pubTime>2017-09-25T03:09:18.000Z</pubTime>
+        
+        <tag>TA</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/26/DBMSSAS-Assignment1/</loc>
+    <lastmod>2017-09-26T06:10:59.000Z</lastmod>
+    <data>
+        <display>
+        <title>DBMSSAS Assignment1</title>
+        <pubTime>2017-09-26T05:57:09.000Z</pubTime>
+        
+        <tag>TA</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/08/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%92%8C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%86%E5%9F%9F%E5%B8%B8%E7%94%A8%E7%9A%84Python%E5%BA%93/</loc>
+    <lastmod>2017-09-25T03:26:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>数据科学和机器学习领域常用的 Python 库</title>
+        <pubTime>2017-09-08T08:02:32.000Z</pubTime>
+        
+        <tag>COLLECTION</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/03/MarkDown%E8%A1%A8%E8%BE%BE/</loc>
+    <lastmod>2017-09-25T03:21:25.000Z</lastmod>
+    <data>
+        <display>
+        <title>MarkDown表达</title>
+        <pubTime>2017-09-03T06:43:19.000Z</pubTime>
+        
+        <tag>Notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://mingotang.github.io/2017/09/15/python%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2017-09-25T00:59:40.000Z</lastmod>
+    <lastmod>2017-09-25T03:14:10.000Z</lastmod>
     <data>
         <display>
         <title>python相关技巧</title>
         <pubTime>2017-09-15T07:38:39.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Notes</tag>
          
          
            
@@ -22,13 +90,13 @@
     
   <url>
     <loc>http://mingotang.github.io/2017/09/14/Pandas-Cheat-List/</loc>
-    <lastmod>2017-09-16T02:12:56.000Z</lastmod>
+    <lastmod>2017-09-25T03:14:00.000Z</lastmod>
     <data>
         <display>
         <title>Pandas Cheat List</title>
         <pubTime>2017-09-14T03:08:41.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Notes</tag>
          
          
            
@@ -39,30 +107,13 @@
     
   <url>
     <loc>http://mingotang.github.io/2017/09/12/NumPy-Arrays-Cheat-List/</loc>
-    <lastmod>2017-09-14T03:26:48.000Z</lastmod>
+    <lastmod>2017-09-25T03:13:52.000Z</lastmod>
     <data>
         <display>
         <title>NumPy Arrays Cheat List</title>
         <pubTime>2017-09-12T08:38:56.000Z</pubTime>
         
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://mingotang.github.io/2017/09/11/Aprior%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2017-09-11T11:36:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>Aprior算法</title>
-        <pubTime>2017-09-11T11:28:12.000Z</pubTime>
-        
-        <tag>Algorithm</tag>
+        <tag>Notes</tag>
          
          
            
@@ -73,13 +124,64 @@
     
   <url>
     <loc>http://mingotang.github.io/2017/09/11/python%E6%93%8D%E4%BD%9C%E7%AC%A6%E9%87%8D%E8%BD%BD/</loc>
-    <lastmod>2017-09-11T01:37:41.000Z</lastmod>
+    <lastmod>2017-09-25T03:13:45.000Z</lastmod>
     <data>
         <display>
         <title>python操作符重载</title>
         <pubTime>2017-09-11T00:50:21.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/07/33%E6%AC%BE%E5%BC%80%E6%BA%90%E7%88%AC%E8%99%AB%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2017-09-25T03:13:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>33款开源爬虫软件工具</title>
+        <pubTime>2017-09-07T13:53:19.000Z</pubTime>
+        
+        <tag>COLLECTION</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/11/Aprior%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2017-09-25T03:13:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>Aprior算法</title>
+        <pubTime>2017-09-11T11:28:12.000Z</pubTime>
+        
+        <tag>COLLECTION</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/06/%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/</loc>
+    <lastmod>2017-09-25T03:12:59.000Z</lastmod>
+    <data>
+        <display>
+        <title>数据集下载链接汇总</title>
+        <pubTime>2017-09-06T07:04:43.000Z</pubTime>
+        
+        <tag>COLLECTION</tag>
          
          
            
@@ -106,23 +208,6 @@
 
     
   <url>
-    <loc>http://mingotang.github.io/2017/09/08/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%92%8C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%86%E5%9F%9F%E5%B8%B8%E7%94%A8%E7%9A%84Python%E5%BA%93/</loc>
-    <lastmod>2017-09-09T03:31:50.000Z</lastmod>
-    <data>
-        <display>
-        <title>数据科学和机器学习领域常用的 Python 库</title>
-        <pubTime>2017-09-08T08:02:32.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://mingotang.github.io/2017/09/07/Git-Cheat-Sheet/</loc>
     <lastmod>2017-09-07T15:02:18.000Z</lastmod>
     <data>
@@ -131,23 +216,6 @@
         <pubTime>2017-09-07T15:00:21.000Z</pubTime>
         
         <tag>Notes</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://mingotang.github.io/2017/09/07/33%E6%AC%BE%E5%BC%80%E6%BA%90%E7%88%AC%E8%99%AB%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2017-09-07T14:50:17.000Z</lastmod>
-    <data>
-        <display>
-        <title>33款开源爬虫软件工具</title>
-        <pubTime>2017-09-07T13:53:19.000Z</pubTime>
-        
-        <tag>Collection</tag>
          
          
            
@@ -173,39 +241,5 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://mingotang.github.io/2017/09/06/%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/</loc>
-    <lastmod>2017-09-06T07:21:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>数据集下载链接汇总</title>
-        <pubTime>2017-09-06T07:04:43.000Z</pubTime>
-        
-        <tag>Collection</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://mingotang.github.io/2017/09/03/MarkDown%E8%A1%A8%E8%BE%BE/</loc>
-    <lastmod>2017-09-04T14:53:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>MarkDown表达</title>
-        <pubTime>2017-09-03T06:43:19.000Z</pubTime>
-        
-        <tag>Notes</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
 </urlset>
