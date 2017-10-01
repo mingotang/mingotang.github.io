@@ -4,8 +4,25 @@
 
     
   <url>
+    <loc>http://mingotang.github.io/2017/09/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E5%8F%8ASAS%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2017-10-01T12:51:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>数据库基础及SAS应用</title>
+        <pubTime>2017-09-25T03:09:18.000Z</pubTime>
+        
+        <tag>TA</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://mingotang.github.io/2017/09/26/DBMSSAS-Assignment1/</loc>
-    <lastmod>2017-09-26T13:14:29.000Z</lastmod>
+    <lastmod>2017-10-01T02:56:28.000Z</lastmod>
     <data>
         <display>
         <title>DBMSSAS Assignment1</title>
@@ -21,14 +38,99 @@
 
     
   <url>
-    <loc>http://mingotang.github.io/2017/09/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E5%8F%8ASAS%E5%BA%94%E7%94%A8/</loc>
-    <lastmod>2017-09-26T06:30:15.000Z</lastmod>
+    <loc>http://mingotang.github.io/2017/09/03/MarkDown%E8%A1%A8%E8%BE%BE/</loc>
+    <lastmod>2017-10-01T02:51:02.000Z</lastmod>
     <data>
         <display>
-        <title>数据库基础及SAS应用</title>
-        <pubTime>2017-09-25T03:09:18.000Z</pubTime>
+        <title>MarkDown表达</title>
+        <pubTime>2017-09-03T06:43:19.000Z</pubTime>
         
-        <tag>TA</tag>
+        <tag>Notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/15/python%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2017-09-29T06:08:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>python相关技巧</title>
+        <pubTime>2017-09-15T07:38:39.000Z</pubTime>
+        
+        <tag>Notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/11/Aprior%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2017-09-29T05:57:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>Aprior算法</title>
+        <pubTime>2017-09-11T11:28:12.000Z</pubTime>
+        
+        <tag>Notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/28/Python-%E8%B5%84%E6%BA%90%E5%8C%85%E5%A4%A7%E5%85%A8/</loc>
+    <lastmod>2017-09-28T09:04:40.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python 资源包大全</title>
+        <pubTime>2017-09-28T08:59:46.000Z</pubTime>
+        
+        <tag>COLLECTION</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2015/10/19/Hexo%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/</loc>
+    <lastmod>2017-09-28T08:46:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo使用方式</title>
+        <pubTime>2015-10-19T02:34:12.000Z</pubTime>
+        
+        <tag>Notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/07/Git-Cheat-Sheet/</loc>
+    <lastmod>2017-09-28T08:08:40.000Z</lastmod>
+    <data>
+        <display>
+        <title>Git Cheat Sheet</title>
+        <pubTime>2017-09-07T15:00:21.000Z</pubTime>
+        
+        <tag>Notes</tag>
          
          
            
@@ -46,40 +148,6 @@
         <pubTime>2017-09-08T08:02:32.000Z</pubTime>
         
         <tag>COLLECTION</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://mingotang.github.io/2017/09/03/MarkDown%E8%A1%A8%E8%BE%BE/</loc>
-    <lastmod>2017-09-25T03:21:25.000Z</lastmod>
-    <data>
-        <display>
-        <title>MarkDown表达</title>
-        <pubTime>2017-09-03T06:43:19.000Z</pubTime>
-        
-        <tag>Notes</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://mingotang.github.io/2017/09/15/python%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2017-09-25T03:14:10.000Z</lastmod>
-    <data>
-        <display>
-        <title>python相关技巧</title>
-        <pubTime>2017-09-15T07:38:39.000Z</pubTime>
-        
-        <tag>Notes</tag>
          
          
            
@@ -157,23 +225,6 @@
 
     
   <url>
-    <loc>http://mingotang.github.io/2017/09/11/Aprior%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2017-09-25T03:13:01.000Z</lastmod>
-    <data>
-        <display>
-        <title>Aprior算法</title>
-        <pubTime>2017-09-11T11:28:12.000Z</pubTime>
-        
-        <tag>COLLECTION</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://mingotang.github.io/2017/09/06/%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/</loc>
     <lastmod>2017-09-25T03:12:59.000Z</lastmod>
     <data>
@@ -199,40 +250,6 @@
         <pubTime>2017-09-09T03:29:06.000Z</pubTime>
         
         <tag>Blog</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://mingotang.github.io/2017/09/07/Git-Cheat-Sheet/</loc>
-    <lastmod>2017-09-07T15:02:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>Git Cheat Sheet</title>
-        <pubTime>2017-09-07T15:00:21.000Z</pubTime>
-        
-        <tag>Notes</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://mingotang.github.io/2015/10/19/Hexo%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/</loc>
-    <lastmod>2017-09-07T14:50:14.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo使用方式</title>
-        <pubTime>2015-10-19T02:34:12.000Z</pubTime>
-        
-        <tag>Notes</tag>
          
          
            

@@ -5,7 +5,26 @@
 <h2 id="pip-and-packages"><a href="#pip-and-packages" class="headerlink" title="pip and packages"></a>pip and packages</h2><p>获取python运行环境下的扩展包：<code>$ pip freeze &gt; requirements.txt</code></p>
 <p>获取当前项目使用扩展包：<code>$ pipreqs /path/to/project</code></p>
 <p>安装requirements：<code>$ pip install -r requirements.txt</code></p>
-</div></article><div class="pagination"><a href="/2017/09/25/数据库基础及SAS应用/" class="pagination-prev">PREV</a><a href="/2017/09/14/Pandas-Cheat-List/" class="pagination-next">NEXT</a></div><div class="comments"></div></div><aside class="sidebar"><h3>分类标签</h3><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/COLLECTION/">COLLECTION</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TA/">TA</a></li></ul><h3>最新文章</h3><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/26/DBMSSAS-Assignment1/">DBMSSAS Assignment1</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/25/数据库基础及SAS应用/">数据库基础及SAS应用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/15/python相关技巧/">python相关技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/14/Pandas-Cheat-List/">Pandas Cheat List</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/12/NumPy-Arrays-Cheat-List/">NumPy Arrays Cheat List</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/11/Aprior算法/">Aprior算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/11/python操作符重载/">python操作符重载</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/09/不要让鱼去学爬树/">不要让鱼去学爬树</a></li></ul></aside></section></div><div class="extra"></div><footer class="footer"><div class="row-flex-row limit-width vh-center"><div class="copyright"><P>© 2017 <a href="/">Mingo Tang</P></div><div class="power"><p><a href="http://pinggod.com/">Sean Sun</a>, 
+<h2 id="jupyter-notebook"><a href="#jupyter-notebook" class="headerlink" title="jupyter notebook"></a>jupyter notebook</h2><h3 id="更改-jupyter-notebook-主题"><a href="#更改-jupyter-notebook-主题" class="headerlink" title="更改 jupyter notebook 主题"></a>更改 jupyter notebook 主题</h3><p>使用的是jupyter-themes</p>
+<p>首先在控制台下用pip 安装 <a href="https://github.com/dunovank/jupyter-themes" target="_blank" rel="external">jupyter-themes</a></p>
+<pre><code>$ pip install --upgrade jupyterthemes
+</code></pre><p>然后可以查看所有可用的主题：</p>
+<pre><code>$ jt -l
+
+Available Themes:
+   chesterish
+   grade3
+   monokai
+   oceans16
+   onedork
+   solarizedd
+   solarizedl
+</code></pre><p>可以用下面命令选择要用的主题。</p>
+<pre><code>$ jt -t 主题名称
+</code></pre><p>如果要恢复默认：</p>
+<pre><code>$ jt -r
+</code></pre><p><a href="https://github.com/dunovank/jupyter-themes" target="_blank" rel="external">查看各主题样式</a></p>
+</div></article><div class="pagination"><a href="/2017/09/25/数据库基础及SAS应用/" class="pagination-prev">PREV</a><a href="/2017/09/14/Pandas-Cheat-List/" class="pagination-next">NEXT</a></div><div class="comments"></div></div><aside class="sidebar"><h3>分类标签</h3><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/COLLECTION/">COLLECTION</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TA/">TA</a></li></ul><h3>最新文章</h3><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/28/Python-资源包大全/">Python 资源包大全</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/26/DBMSSAS-Assignment1/">DBMSSAS Assignment1</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/25/数据库基础及SAS应用/">数据库基础及SAS应用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/15/python相关技巧/">python相关技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/14/Pandas-Cheat-List/">Pandas Cheat List</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/12/NumPy-Arrays-Cheat-List/">NumPy Arrays Cheat List</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/11/Aprior算法/">Aprior算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/11/python操作符重载/">python操作符重载</a></li></ul></aside></section></div><div class="extra"></div><footer class="footer"><div class="row-flex-row limit-width vh-center"><div class="copyright"><P>© 2017 <a href="/">Mingo Tang</P></div><div class="power"><p><a href="http://pinggod.com/">Sean Sun</a>, 
 <a href="https://hexo.io">Hexo</a>, 
 <a href="https://github.com/">GitHub</a>, 
 <a href="https://jekyllrb.com/">Jekyll</a></p></div></div></footer><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>

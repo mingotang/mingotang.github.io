@@ -2,7 +2,17 @@
 <script src="js/html5shiv.min.js"></script>
 <script src="js/respond.min.js"></script>
 <![endif]--></head><body><header class="row-flex-row limit-width vh-center"><a href="/" class="logo"><img src="/favicon.png"></a><nav><ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-link">Home</a></li><li class="nav-list-item"><a href="/archives/" class="nav-link active">   Blog</a></li><li class="nav-list-item"><a href="https://github.com/mingotang" target="_blank" class="nav-link">github</a></li><li class="nav-list-item"><a href="http://www.jianshu.com/users/12bf64a47246" target="_blank" class="nav-link">jianshu</a></li><li class="nav-list-item"><a href="/atom.xml" class="nav-link">rss</a></li></ul></nav></header><div class="container limit-width"><section class="row-flex-row"><div class="post"><article class="post-block"><h2 class="post-title"><a href="/2017/09/07/Git-Cheat-Sheet/" class="post-title-link">Git Cheat Sheet</a></h2><div class="post-meta"><ul class="post-tag-list"><li class="post-tag-item"><a href="/tags/Notes/" class="post-tag-link">Notes</a></li></ul><div class="post-time">Thursday, September 7th 2017</div></div><div class="post-content"><a id="more"></a>
-<h2 id="Git-本地更改操作"><a href="#Git-本地更改操作" class="headerlink" title="Git 本地更改操作"></a>Git 本地更改操作</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><ul>
+<h2 id="Git-本地更改操作"><a href="#Git-本地更改操作" class="headerlink" title="Git 本地更改操作"></a>Git 本地更改操作</h2><h3 id="GIT-HELP"><a href="#GIT-HELP" class="headerlink" title="GIT HELP"></a>GIT HELP</h3><pre><code>$ git help
+usage: git [--version] [--help] [-C &lt;path&gt;] [-c name=value]
+       [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]
+       [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+       [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]
+       &lt;command&gt; [&lt;args&gt;]
+
+
+$ git help config
+    git-config ** Get and set repository or global options
+</code></pre><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><ul>
 <li>初始化一个 Git 仓库：<code>git init</code></li>
 </ul>
 <h3 id="提交修改"><a href="#提交修改" class="headerlink" title="提交修改"></a>提交修改</h3><ul>
@@ -16,7 +26,21 @@
 </li>
 <li>为文件添加执行权限，并将修改添加到暂存区：<code>git update-index --chmod=+x &lt;file&gt;</code></li>
 </ul>
-<h3 id="回退修改"><a href="#回退修改" class="headerlink" title="回退修改"></a>回退修改</h3><ul>
+<p>Commit changes  ** A snapshot of those on the stage</p>
+<pre><code>$ git status    ** To check what&apos;s changed since last commit
+
+$ git add README.txt
+
+$ git add --all
+
+$ git add &lt;list of files&gt;
+
+$ git add docs/
+
+$ git commit -m &quot;Create a README.&quot;  ** Commit message, what work was done?
+
+$ git log   ** get timeline history
+</code></pre><h3 id="回退修改"><a href="#回退修改" class="headerlink" title="回退修改"></a>回退修改</h3><ul>
 <li>回退工作区的修改：<code>git checkout -- &lt;file&gt;</code></li>
 <li>回退工作区的修改，但保存现场：<code>git stash</code><ul>
 <li>恢复现场：<code>git stash pop</code></li>
@@ -69,6 +93,15 @@
 <li><p>配置 difftool：</p>
 <p>  编辑 <code>~/.gitconfig</code>：</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[diff]</div><div class="line">	tool = meld</div><div class="line">[difftool &quot;meld&quot;]</div><div class="line">	path = C:\\path\\to\\meld\\Meld.exe</div></pre></td></tr></table></figure>
+<p>$ git diff  ** No difference since all changes are staged</p>
+<p>$ git diff –staged     ** View staged difference</p>
+<p>$ git reset HEAD <file>    ** unstage</file></p>
+<p>$ git checkout – <file>    ** Blow away all changes since last commit</file></p>
+<p>$ git commit -a -m “message”    ** Add changes from all tracked files</p>
+<p>$ git reset –soft HEAD^    ** Reset into staging, move to commit before ‘HEAD’</p>
+<p>$ git commit –amend -m “new message”   ** amend last commit</p>
+<p>$ git reset –hard HEAD^    ** Reset to last commit, undo all changes</p>
+<p>$ git reset –hard HEAD^^    ** Reset to last 2 commit, undo all changes</p>
 </li>
 </ul>
 </li>
@@ -165,7 +198,20 @@
 </ul>
 </li>
 </ul>
-<h2 id="Git-标签操作"><a href="#Git-标签操作" class="headerlink" title="Git 标签操作"></a>Git 标签操作</h2><ul>
+<pre><code>$ git remote add name_for_remote https://github.com/Gregg/git-real.git
+
+$ git remote -v     ** show remote repo
+
+$ git push -u name_for_remote local_branch_to_push
+
+$ git pull
+
+$ git remote add &lt;name&gt; &lt;address&gt;
+
+$ git remote rm &lt;name&gt;
+
+$ git push -u &lt;name&gt; &lt;branch&gt;
+</code></pre><h2 id="Git-标签操作"><a href="#Git-标签操作" class="headerlink" title="Git 标签操作"></a>Git 标签操作</h2><ul>
 <li>基于 <code>HEAD</code> 新建标签：<code>git tag &lt;name&gt;</code><ul>
 <li>基于指定 commit 新建标签：<code>git tag &lt;name&gt; &lt;commit&gt;</code></li>
 <li>指定标签信息：<code>git tag -m &lt;message&gt; &lt;name&gt;</code></li>
@@ -179,7 +225,14 @@
 </li>
 <li>在指定远程仓库删除指定标签：<code>git push &lt;repo-name&gt; :refs/tags/&lt;tag-name&gt;</code></li>
 </ul>
-<h2 id="Git-子模块操作"><a href="#Git-子模块操作" class="headerlink" title="Git 子模块操作"></a>Git 子模块操作</h2><ul>
+<pre><code>$ git tag   ** list all tags
+
+$ git checkout v0.0.1   ** check out code at commit
+
+$ git tag -a v0.0.3 -m &quot;version 0.0.3&quot;    ** add a new tag
+
+$ git push --tags
+</code></pre><h2 id="Git-子模块操作"><a href="#Git-子模块操作" class="headerlink" title="Git 子模块操作"></a>Git 子模块操作</h2><ul>
 <li>添加 submodule：<code>git submodule add -b &lt;branch&gt; --name &lt;name&gt; &lt;repo&gt; &lt;path&gt;</code></li>
 <li>查看 submodule 状态：<code>git submodule status</code></li>
 <li><p>clone 含 submodule 的项目</p>
@@ -218,12 +271,72 @@
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">source</span> <span class="variable">$&#123;GIT_SOURCE_DIR&#125;</span>/contrib/completion/git-completion.bash</div><div class="line"><span class="built_in">source</span> <span class="variable">$&#123;GIT_SOURCE_DIR&#125;</span>/contrib/completion/git-prompt.sh</div><div class="line"></div><div class="line"><span class="keyword">function</span> color_my_prompt &#123;</div><div class="line">    <span class="built_in">local</span> __user_and_host=<span class="string">"\[\033[01;32m\]\u@\h"</span></div><div class="line">    <span class="built_in">local</span> __cur_location=<span class="string">"\[\033[01;34m\]\w"</span></div><div class="line">    <span class="built_in">local</span> __git_branch_color=<span class="string">"\[\033[31m\]"</span></div><div class="line">    <span class="built_in">local</span> __git_branch=<span class="string">'`git branch 2&gt; /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'</span></div><div class="line">    <span class="built_in">local</span> __prompt_tail=<span class="string">"\[\033[35m\]$"</span></div><div class="line">    <span class="built_in">local</span> __last_color=<span class="string">"\[\033[00m\]"</span></div><div class="line">    <span class="built_in">export</span> PS1=<span class="string">"<span class="variable">$__user_and_host</span> <span class="variable">$__cur_location</span> <span class="variable">$__git_branch_color</span><span class="variable">$__git_branch</span><span class="variable">$__prompt_tail</span><span class="variable">$__last_color</span> "</span></div><div class="line">&#125;</div><div class="line">color_my_prompt</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="豆知识"><a href="#豆知识" class="headerlink" title="豆知识"></a>豆知识</h2><h3 id="commit-别名"><a href="#commit-别名" class="headerlink" title="commit 别名"></a>commit 别名</h3><p>在 Git 中，<code>HEAD</code> 表示当前版本，也就是最新的提交，上一个版本就是 <code>HEAD^</code>，上上一个版本就是 <code>HEAD^^</code>，上100个版本写成 <code>HEAD~100</code>。</p>
+<h3 id="REBASE"><a href="#REBASE" class="headerlink" title="REBASE"></a>REBASE</h3><ul>
+<li>Move all changes to master which are not in origin/master to a temporary area.</li>
+<li>Run all origin/master commits.</li>
+<li>Run all commits in the temporary area, one at a time.</li>
+</ul>
+<pre><code>$ git rebase --continue
+
+$ git rebase --skip
+
+$ git rebase --abort
+$ git fetch     ** Syncs, but doesn&apos;t merge
+
+$ git rebase &lt;branch&gt;
+</code></pre><h3 id="HISTORY"><a href="#HISTORY" class="headerlink" title="HISTORY"></a>HISTORY</h3><p>LOG</p>
+<pre><code>$ git config --global color.ui true       ** set log colorful to read
+
+$ git log --pretty=oneline
+
+$ git log --pretty=format:&quot;%h %ad- %s [%an]&quot;
+
+$ git log --oneline -p     ** To see lines added and deleted
+
+$ git log --oneline -stat       ** To see how many lines changed
+
+$ git log --oneline -graph
+
+$ git log --until=1.minute.ago
+
+$ git log --since=1.day.ago
+
+$ git log --since=1.hour.ago
+
+$ git log --since=1.month.ago --until=2.weeks.ago
+
+$ git log --since=2000-01-01 --until=2012-12-21
+
+$ git diff
+
+$ git diff HEAD/HEAD^/HEAD^^/HEAD~5
+
+$ git diff HEAD^..HEAD
+
+$ git diff &lt;branch&gt; &lt;branch&gt;
+
+$ git blame index.html --date short
+</code></pre><h3 id="Excluding"><a href="#Excluding" class="headerlink" title="Excluding"></a>Excluding</h3><p>.gitignore</p>
+<pre><code>$ git rm README.txt           ** delete the file
+
+$ git rm --cached development.log     ** stop tracking but do not delete
+</code></pre><h3 id="CONFIG"><a href="#CONFIG" class="headerlink" title="CONFIG"></a>CONFIG</h3><pre><code>$ git config --global user.name &quot;Gregg Pollack&quot;
+
+$ git config --global user.email &quot;gregg@codeschool.com&quot;
+
+$ git config --global core.editor emacs     ** use emacs for interactive commands
+
+$ git config --global merge.tool opendiff    ** use opendiff for merging conflicts
+
+$ git config user.email &quot;spamme@example.com&quot;     ** sets email for current repo
+
+$ git config --list
+</code></pre><h2 id="豆知识"><a href="#豆知识" class="headerlink" title="豆知识"></a>豆知识</h2><h3 id="commit-别名"><a href="#commit-别名" class="headerlink" title="commit 别名"></a>commit 别名</h3><p>在 Git 中，<code>HEAD</code> 表示当前版本，也就是最新的提交，上一个版本就是 <code>HEAD^</code>，上上一个版本就是 <code>HEAD^^</code>，上100个版本写成 <code>HEAD~100</code>。</p>
 <h3 id="dry-run"><a href="#dry-run" class="headerlink" title="dry run"></a>dry run</h3><p>很多命令都有 <code>-n</code> 或 <code>--dry-run</code> 选项，使用了该选项后，命令不会直接运行，而是输出它将执行的内容，供用户判断执行的内容是否和预期一致，从而决定是否实际执行该命令。这避免了一些手误的情况，在某些重要的操作上很有用。</p>
 <h3 id=""><a href="#" class="headerlink" title="--"></a><code>--</code></h3><p>Git 的命令中常含有 <code>--</code>，它用来分割 Git 命令的选项和文件/文件列表，以防某些文件名被误认为是选项。</p>
 <h3 id="在-Windows-下启动-Git-server"><a href="#在-Windows-下启动-Git-server" class="headerlink" title="在 Windows 下启动 Git server"></a>在 Windows 下启动 Git server</h3><p>将指定目录下所有的仓库都通过 Git server 暴露给其他人：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git daemon --base-path=/path/to/workplace --<span class="built_in">export</span>-all</div></pre></td></tr></table></figure>
-</div></article><div class="pagination"><a href="/2017/09/08/数据科学和机器学习领域常用的Python库/" class="pagination-prev">PREV</a><a href="/2017/09/07/33款开源爬虫软件工具/" class="pagination-next">NEXT</a></div><div class="comments"></div></div><aside class="sidebar"><h3>分类标签</h3><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/COLLECTION/">COLLECTION</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TA/">TA</a></li></ul><h3>最新文章</h3><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/26/DBMSSAS-Assignment1/">DBMSSAS Assignment1</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/25/数据库基础及SAS应用/">数据库基础及SAS应用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/15/python相关技巧/">python相关技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/14/Pandas-Cheat-List/">Pandas Cheat List</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/12/NumPy-Arrays-Cheat-List/">NumPy Arrays Cheat List</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/11/Aprior算法/">Aprior算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/11/python操作符重载/">python操作符重载</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/09/不要让鱼去学爬树/">不要让鱼去学爬树</a></li></ul></aside></section></div><div class="extra"></div><footer class="footer"><div class="row-flex-row limit-width vh-center"><div class="copyright"><P>© 2017 <a href="/">Mingo Tang</P></div><div class="power"><p><a href="http://pinggod.com/">Sean Sun</a>, 
+</div></article><div class="pagination"><a href="/2017/09/08/数据科学和机器学习领域常用的Python库/" class="pagination-prev">PREV</a><a href="/2017/09/07/33款开源爬虫软件工具/" class="pagination-next">NEXT</a></div><div class="comments"></div></div><aside class="sidebar"><h3>分类标签</h3><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/COLLECTION/">COLLECTION</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TA/">TA</a></li></ul><h3>最新文章</h3><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/28/Python-资源包大全/">Python 资源包大全</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/26/DBMSSAS-Assignment1/">DBMSSAS Assignment1</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/25/数据库基础及SAS应用/">数据库基础及SAS应用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/15/python相关技巧/">python相关技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/14/Pandas-Cheat-List/">Pandas Cheat List</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/12/NumPy-Arrays-Cheat-List/">NumPy Arrays Cheat List</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/11/Aprior算法/">Aprior算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/11/python操作符重载/">python操作符重载</a></li></ul></aside></section></div><div class="extra"></div><footer class="footer"><div class="row-flex-row limit-width vh-center"><div class="copyright"><P>© 2017 <a href="/">Mingo Tang</P></div><div class="power"><p><a href="http://pinggod.com/">Sean Sun</a>, 
 <a href="https://hexo.io">Hexo</a>, 
 <a href="https://github.com/">GitHub</a>, 
 <a href="https://jekyllrb.com/">Jekyll</a></p></div></div></footer><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
