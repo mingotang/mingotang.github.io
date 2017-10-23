@@ -5,7 +5,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://mingotang.github.io/"/>
-  <updated>2017-10-16T00:54:55.000Z</updated>
+  <updated>2017-10-23T08:08:33.000Z</updated>
   <id>http://mingotang.github.io/</id>
   
   <author>
@@ -14,6 +14,94 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DBMSSAS Assignment5</title>
+    <link href="http://mingotang.github.io/2017/10/21/DBMSSAS-Assignment5/"/>
+    <id>http://mingotang.github.io/2017/10/21/DBMSSAS-Assignment5/</id>
+    <published>2017-10-21T12:19:27.000Z</published>
+    <updated>2017-10-23T08:08:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>Based on database of Student – Course, write the relation algebra expresses. (One express for each question).<br>Student(<u>sno</u>, sname, ssex, sdept, sage)<br>Course(<u>cno</u>, cname, cpno, ccredit)<br>SC(<u>sno</u>, <u>cno</u>, grade)</p>
+<ol>
+<li>Query the student name (sname) who selected all courses except course 8 and course 9. (Using division)</li>
+<li>Query the course name (cname) and its prerequisite’ prerequisite’ course number (cno).</li>
+</ol>
+<hr>
+<h2 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h2><table>
+<thead>
+<tr>
+<th>关系代数</th>
+<th>代数表达</th>
+<th>代数标签</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>选择</td>
+<td>Select</td>
+<td>&delta;</td>
+</tr>
+<tr>
+<td>投影</td>
+<td>Proj</td>
+<td>&pi;</td>
+</tr>
+<tr>
+<td>组合</td>
+<td>*</td>
+<td>X</td>
+</tr>
+<tr>
+<td>连接</td>
+<td>Join, Connection</td>
+<td>&#9658;&#9668;</td>
+</tr>
+<tr>
+<td>重命名</td>
+<td>Rename</td>
+<td>&varrho;</td>
+</tr>
+<tr>
+<td>除</td>
+<td>Divide</td>
+<td>÷</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Query-the-student-name-sname-who-selected-all-courses-except-course-8-and-course-9"><a href="#Query-the-student-name-sname-who-selected-all-courses-except-course-8-and-course-9" class="headerlink" title="Query the student name (sname) who selected all courses except course 8 and course 9."></a><strong>Query the student name (sname) who selected all courses except course 8 and course 9.</strong></h4><p>Proj<sub>sname</sub> {Student Join [Proj<sub>sno, cno</sub>(SC) ÷ Proj<sub>cno</sub>(Select<sub>cno&ne;8 and cno&ne;9</sub>(Course)) - Proj<sub>sno</sub>(Select<sub>cno=8 or cno=9</sub>(Course))]}</p>
+<h4 id="Query-the-course-name-cname-and-its-prerequisite’-prerequisite’-course-number-cno"><a href="#Query-the-course-name-cname-and-its-prerequisite’-prerequisite’-course-number-cno" class="headerlink" title="Query the course name (cname) and its prerequisite’ prerequisite’ course number (cno)."></a><strong>Query the course name (cname) and its prerequisite’ prerequisite’ course number (cno).</strong></h4><p>Proj<sub>cname, cppno</sub>{Proj<sub>cno, cname, cpno</sub>(Course) Join Rename<sub>C(cpno, cppno)</sub>[Proj<sub>cno, cpno</sub>(Course)]}</p>
+<p>或者 查看胡老师给出的<a href="http://ox3grgjnx.bkt.clouddn.com/Ref%20DBMSSAS%20Assignment5.pdf" target="_blank" rel="external">参考答案</a></p>
+<hr>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>第一问类似Proj<sub>sname</sub> {Student Join [Proj<sub>sno, cno</sub>(SC) ÷ Proj<sub>cno</sub>(Select<sub>cno&ne;8 and cno&ne;9</sub>(Course))]}<ul>
+<li>这种做法会让最后的结果变成了选除课程8和9的学生+选除课程8的学生+选除课程9的学生。当然这三部分有共同部分选除课程8和9的学生</li>
+</ul>
+</li>
+<li>第一问类似Proj<sub>sname</sub>(Student Join  {[Proj<sub>cno, sno</sub>(Select<sub>cno&ne;8 and cno&ne;9</sub>(SC))]/Select<sub>cno&ne;8 and cno&ne;9</sub>(Course)})<ul>
+<li>这种做法和前一种类似，Proj<sub>cno, sno</sub>(Select<sub>cno&ne;8 and cno&ne;9</sub>(SC))并没有改变除了8和9之外的cno对应的sno，因此最后得到的sno依然包含选除课程8的学生+选除课程9的学生</li>
+</ul>
+</li>
+<li>出现表达如 cno != 8 and 9：<ul>
+<li>Sno只能有一个值，不可能既是8又是9，所以需要表达成 cno&ne;8 and cno&ne;9</li>
+</ul>
+</li>
+<li>注意关系代数的优先级，优先级见本答案表格，否则就需要用括号标明</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h2&gt;&lt;p&gt;Based on database of Student – C
+    
+    </summary>
+    
+    
+      <category term="TA" scheme="http://mingotang.github.io/tags/TA/"/>
+    
+  </entry>
   
   <entry>
     <title>DBMSSAS Assignment4</title>
