@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> MarkDown表达 · Mingo的博客</title><meta name="description" content="Welcome to my personal blog"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/jekyll.css"><!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]--></head><body><header class="row-flex-row limit-width vh-center"><a href="/" class="logo"><img src="/favicon.png"></a><nav><ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-link">Home</a></li><li class="nav-list-item"><a href="/archives/" class="nav-link active">   Blog</a></li><li class="nav-list-item"><a href="https://github.com/mingotang" target="_blank" class="nav-link">github</a></li><li class="nav-list-item"><a href="http://www.jianshu.com/users/12bf64a47246" target="_blank" class="nav-link">jianshu</a></li><li class="nav-list-item"><a href="/atom.xml" class="nav-link">rss</a></li></ul></nav></header><div class="container limit-width"><section class="row-flex-row"><div class="post"><article class="post-block"><h2 class="post-title"><a href="/2017/09/03/MarkDown表达/" class="post-title-link">MarkDown表达</a></h2><div class="post-meta"><ul class="post-tag-list"><li class="post-tag-item"><a href="/tags/Notes/" class="post-tag-link">Notes</a></li></ul><div class="post-time">Sunday, September 3rd 2017</div></div><div class="post-content"><p><a id="TOC"></a></p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><a href="#heads">标题</a></li>
+<li><a href="#pictures">插入图片</a></li>
+<li><a href="#highlighting">高亮代码</a></li>
+<li><a href="#latex">LaTeX公式</a></li>
+<li><a href="#todolist">Todo 列表</a></li>
+<li><a href="#excel">绘制表格</a></li>
+<li><a href="#coloredtags">加重标签</a></li>
+</ul>
+<p><a id="heads"></a></p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># 一级标题</div><div class="line">## 二级标题</div><div class="line">### 三级标题</div><div class="line">#### 四级标题</div></pre></td></tr></table></figure>
+<p><a id="specified"></a></p>
+<h2 id="重点与注意"><a href="#重点与注意" class="headerlink" title="重点与注意"></a>重点与注意</h2><p><em>加粗</em></p>
+<p><strong>加斜</strong></p>
+<p><code>注意</code></p>
+<blockquote>
+<p>注意</p>
+</blockquote>
+<p><u>Underlined Text</u></p>
+<p><del>Deleted</del></p>
+<blockquote>
+<ul>
+<li>加星重点</li>
+</ul>
+</blockquote>
+<p><a id="pictures"></a></p>
+<h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p><a href="http://mingotang.website" target="_blank" rel="external">链接</a></p>
+<p><img src="http://mingotang.website/image/githubs.png" alt="图片名字"></p>
+<p><a id="highlighting"></a></p>
+<h2 id="高亮代码"><a href="#高亮代码" class="headerlink" title="高亮代码"></a>高亮代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@requires_authorization</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    <span class="comment"># A comment</span></div><div class="line">    print(<span class="string">'hello world'</span>)</div></pre></td></tr></table></figure>
+<p><a id="latex"></a></p>
+<h2 id="LaTeX公式"><a href="#LaTeX公式" class="headerlink" title="LaTeX公式"></a>LaTeX公式</h2><p>$$E=mc^2$$</p>
+<p><a id="todolist"></a></p>
+<h2 id="Todo-列表"><a href="#Todo-列表" class="headerlink" title="Todo 列表"></a>Todo 列表</h2><ul>
+<li style="list-style: none"><input type="checkbox"> 支持以 PDF 格式导出文稿</li>
+<li style="list-style: none"><input type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
+<li style="list-style: none"><input type="checkbox" checked> 新增 Todo 列表功能</li>
+<li style="list-style: none"><input type="checkbox" checked> 修复 LaTex 公式渲染问题</li>
+<li style="list-style: none"><input type="checkbox" checked> 新增 LaTex 公式编号功能</li>
+</ul>
+<p><a id="excel"></a></p>
+<h2 id="绘制表格"><a href="#绘制表格" class="headerlink" title="绘制表格"></a>绘制表格</h2><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align:right">价格 (\$)</th>
+<th style="text-align:center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td style="text-align:right">\$1600</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td style="text-align:right">\$12</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td style="text-align:right">\$1</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<p><a id="coloredtags"></a></p>
+<h2 id="加重标签"><a href="#加重标签" class="headerlink" title="加重标签"></a>加重标签</h2><div class="note"><br>    <h5>标题</h5><br>    <p>内容 note</p><br></div>
+
+
+
+<div class="note info"><br>    <h5>标题</h5><br>    <p>内容 note info</p><br></div>
+
+
+
+
+<div class="note warning"><br>    <h5>标题</h5><br>    <p>内容 note warning</p><br></div>
+
+
+
+<div class="note unreleased"><br>    <h5>标题</h5><br>    <p>内容 note unreleased</p><br></div>
+
+
+</div></article><div class="pagination"><a href="/2017/09/06/数据集下载链接汇总/" class="pagination-prev">PREV</a><a href="/2015/10/19/Hexo使用方式/" class="pagination-next">NEXT</a></div><div class="comments"></div></div><aside class="sidebar"><h3>分类标签</h3><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/COLLECTION/">COLLECTION</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TA/">TA</a></li></ul><h3>最新文章</h3><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/21/DBMSSAS-Assignment5/">DBMSSAS Assignment5</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/DBMSSAS-Assignment4/">DBMSSAS Assignment4</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/29/DBMSSAS-Assignment3/">DBMSSAS Assignment3</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/28/Python-资源包大全/">Python 资源包大全</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/26/DBMSSAS-Assignment2/">DBMSSAS Assignment2</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/26/DBMSSAS-Assignment1/">DBMSSAS Assignment1</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/25/数据库基础及SAS应用/">数据库基础及SAS应用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/15/python相关技巧/">python相关技巧</a></li></ul></aside></section></div><div class="extra"></div><footer class="footer"><div class="row-flex-row limit-width vh-center"><div class="copyright"><P>© 2017 <a href="/">Mingo Tang</P></div><div class="power"><p><a href="http://pinggod.com/">Sean Sun</a>, 
+<a href="https://hexo.io">Hexo</a>, 
+<a href="https://github.com/">GitHub</a>, 
+<a href="https://jekyllrb.com/">Jekyll</a></p></div></div></footer><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
