@@ -5,7 +5,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://mingotang.github.io/"/>
-  <updated>2017-10-23T08:08:33.000Z</updated>
+  <updated>2017-11-05T15:27:01.252Z</updated>
   <id>http://mingotang.github.io/</id>
   
   <author>
@@ -14,6 +14,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DBMSSAS Assignment6</title>
+    <link href="http://mingotang.github.io/2017/11/03/DBMSSAS-Assignment6/"/>
+    <id>http://mingotang.github.io/2017/11/03/DBMSSAS-Assignment6/</id>
+    <published>2017-11-03T01:37:15.000Z</published>
+    <updated>2017-11-05T15:27:01.252Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>Write SQL sentences</p>
+<ol>
+<li>Create and alter table.<br>(1) Create a Teacher table with the attributes: TNo char(10), TName nchar(10), TSex nchar(2), TAge int, TAddr nchar(50), define the Tno as Primary key.<br>(2) Alter Teacher table, drop the Tage attribute<br>(3) Alter Teacher table, change the data type of TAddr to varchar(50).</li>
+<li>Create view.<br>Create a view MStudent(sno, avgGrade) includes the students whose average grades are in [80-90).</li>
+<li>Insert values.<ul>
+<li>杨功利 selected course 4,8,9 and got the grades 88,85,90;</li>
+<li>李明 selected course 3,8,9 and got the grades 92,93,89;</li>
+</ul>
+</li>
+<li>Query<br>(1) Query the sno and sname of students who selected all courses;<br>(2) Query the course name and its prerequisite‘s prerequisite course number.<br>(3) Query the SNo, SNmae, SSex, avgGrade of Students using view MStudent and other tables.</li>
+</ol>
+<hr>
+<h2 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h2><h4 id="Create-and-alter-table"><a href="#Create-and-alter-table" class="headerlink" title="Create and alter table."></a><strong>Create and alter table.</strong></h4><p>(1) Create a Teacher table with the attributes: TNo char(10), TName nchar(10), TSex nchar(2), TAge int, TAddr nchar(50), define the Tno as Primary key.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> Teacher(</div><div class="line">  TNo <span class="built_in">char</span>(<span class="number">10</span>) primary <span class="keyword">key</span>,</div><div class="line">  TName <span class="keyword">nchar</span>(<span class="number">10</span>),</div><div class="line">  TSex <span class="keyword">nchar</span>(<span class="number">2</span>),</div><div class="line">  TAge <span class="built_in">int</span>,</div><div class="line">  TAddr <span class="keyword">nchar</span>(<span class="number">50</span>)</div><div class="line">);</div></pre></td></tr></table></figure>
+<p>(2) Alter Teacher table, drop the Tage attribute.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">Alter</span> <span class="keyword">Table</span> Teacher <span class="keyword">drop</span> <span class="keyword">column</span> Tage;</div></pre></td></tr></table></figure>
+<p>(3) Alter Teacher table, change the data type of TAddr to varchar(50).</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">Alter</span> <span class="keyword">table</span> Teacher <span class="keyword">Alter</span> <span class="keyword">column</span> TAddr <span class="built_in">varchar</span>(<span class="number">50</span>);</div></pre></td></tr></table></figure>
+<h4 id="Create-view"><a href="#Create-view" class="headerlink" title="Create view."></a><strong>Create view.</strong></h4><p>Create a view MStudent(sno, avgGrade) includes the students whose average grades are in [80-90).</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> MStudent <span class="keyword">AS</span></div><div class="line">  <span class="keyword">SELECT</span> Sno, <span class="keyword">AVG</span>(Grade) <span class="keyword">AS</span> avgGrade</div><div class="line">    <span class="keyword">FROM</span> SC</div><div class="line">    <span class="keyword">GROUP</span> <span class="keyword">BY</span> Sno</div><div class="line">    <span class="keyword">Having</span> <span class="keyword">AVG</span>(Grade)&gt;=<span class="number">80</span> <span class="keyword">and</span> <span class="keyword">AVG</span>(Grade)&lt;<span class="number">90</span>;</div></pre></td></tr></table></figure>
+<h4 id="Insert-values"><a href="#Insert-values" class="headerlink" title="Insert values."></a><strong>Insert values.</strong></h4><p>(1) 杨功利 selected course 4,8,9 and got the grades 88,85,90;</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> SC</div><div class="line">  <span class="keyword">VALUES</span>(<span class="string">'12003'</span>, <span class="string">'4'</span>, <span class="number">88</span>),</div><div class="line">        (<span class="string">'12003'</span>, <span class="string">'8'</span>, <span class="number">85</span>),</div><div class="line">        (<span class="string">'12003'</span>, <span class="string">'9'</span>, <span class="number">90</span>);</div></pre></td></tr></table></figure>
+<p>(2) 李明 selected course 3,8,9 and got the grades 92,93,89;</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> SC</div><div class="line">  <span class="keyword">VALUES</span>(<span class="string">'12008'</span>, <span class="string">'3'</span>, <span class="number">92</span>),</div><div class="line">  	    (<span class="string">'12008'</span>, <span class="string">'8'</span>, <span class="number">93</span>),</div><div class="line">        (<span class="string">'12008'</span>, <span class="string">'9'</span>, <span class="number">89</span>);</div></pre></td></tr></table></figure>
+<h4 id="Query"><a href="#Query" class="headerlink" title="Query"></a><strong>Query</strong></h4><p>(1) Query the sno and sname of students who selected all courses;</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SELECT</span> sno, sname</div><div class="line">  <span class="keyword">FROM</span> Student</div><div class="line">  <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span></div><div class="line">    (<span class="keyword">SELECT</span> *</div><div class="line">      <span class="keyword">FROM</span> Course</div><div class="line">      <span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span></div><div class="line">        (<span class="keyword">SELECT</span> *</div><div class="line">          <span class="keyword">FROM</span> SC</div><div class="line">          <span class="keyword">WHERE</span> Sno=Student.Sno <span class="keyword">AND</span> Cno=Course.Cno));</div></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SELECT</span> Sno, Sname</div><div class="line">  <span class="keyword">FROM</span> Student</div><div class="line">  <span class="keyword">WHERE</span> Sno <span class="keyword">in</span></div><div class="line">  	(<span class="keyword">SELECT</span> Sno <span class="keyword">FROM</span> SC</div><div class="line">  	 <span class="keyword">GROUP</span> <span class="keyword">BY</span> Sno</div><div class="line">  	 <span class="keyword">HAVING</span> <span class="keyword">COUNT</span>(Cno)=(<span class="keyword">SELECT</span> <span class="keyword">COUNT</span>(Cno) <span class="keyword">FROM</span> Course));</div></pre></td></tr></table></figure>
+<p>(2) Query the course name and its prerequisite‘s prerequisite course number.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SELECT</span> C1.Cname, C2.Cpno <span class="keyword">as</span> Cppno</div><div class="line">  <span class="keyword">FROM</span> Course C1, Course C2</div><div class="line">  <span class="keyword">WHERE</span> C1.cpno=C2.cno <span class="keyword">and</span> C2.cpno <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>;</div></pre></td></tr></table></figure>
+<p>(3) Query the SNo, SNmae, SSex, avgGrade of Students using view MStudent and other tables.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SELECT</span> Student.sno, Sname, Ssex, avgGrade</div><div class="line">  <span class="keyword">FROM</span> Student, MStudent</div><div class="line">  <span class="keyword">WHERE</span> Student.sno=MStudent.sno;</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>第三问插入值中需要注意SC的结构是sno, cno, grade而不是sname, cno, grade</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h2&gt;&lt;p&gt;Write SQL sentences&lt;/p&gt;
+&lt;ol&gt;
+&lt;li
+    
+    </summary>
+    
+    
+      <category term="TA" scheme="http://mingotang.github.io/tags/TA/"/>
+    
+  </entry>
   
   <entry>
     <title>DBMSSAS Assignment5</title>
@@ -1524,7 +1583,7 @@
     <link href="http://mingotang.github.io/2017/09/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E5%8F%8ASAS%E5%BA%94%E7%94%A8/"/>
     <id>http://mingotang.github.io/2017/09/25/数据库基础及SAS应用/</id>
     <published>2017-09-25T03:09:18.000Z</published>
-    <updated>2017-11-02T16:31:10.000Z</updated>
+    <updated>2017-11-03T01:47:12.000Z</updated>
     
     <content type="html"><![CDATA[<p>数据库基础及SAS应用课程信息</p>
 <a id="more"></a>
@@ -1578,6 +1637,7 @@
 <li><a href="http://mingotang.website/2017/09/29/DBMSSAS-Assignment3/" target="_blank" rel="external">DBMSSAS Assignment3(2017年10月10日8点前提交)</a></li>
 <li><a href="http://mingotang.website/2017/10/13/DBMSSAS-Assignment4/" target="_blank" rel="external">DBMSSAS Assignment4(2017年10月17日8点前提交)</a></li>
 <li><a href="http://mingotang.website/2017/10/21/DBMSSAS-Assignment5/" target="_blank" rel="external">DBMSSAS Assignment5(2017年10月24日8点前提交)</a></li>
+<li><a href="http://mingotang.website/2017/11/03/DBMSSAS-Assignment6/" target="_blank" rel="external">DBMSSAS Assignment6(2017年11月07日8点前提交)</a></li>
 </ul>
 <h2 id="关于本页面"><a href="#关于本页面" class="headerlink" title="关于本页面"></a><em>关于本页面</em></h2><p>本页面使用 GitHub Page 项目实现，网页承载力比较差（毕竟是免费的），所以载入时间较长请谅解。</p>
 ]]></content>
