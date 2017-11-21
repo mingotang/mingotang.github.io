@@ -5,7 +5,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://mingotang.github.io/"/>
-  <updated>2017-11-11T13:00:16.504Z</updated>
+  <updated>2017-11-21T01:19:06.763Z</updated>
   <id>http://mingotang.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://mingotang.github.io/2017/11/11/DBMSSAS-Assignment7/"/>
     <id>http://mingotang.github.io/2017/11/11/DBMSSAS-Assignment7/</id>
     <published>2017-11-11T12:39:16.000Z</published>
-    <updated>2017-11-11T13:00:16.504Z</updated>
+    <updated>2017-11-21T01:19:06.763Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>
 <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><ol>
@@ -46,7 +46,11 @@
 <p>运行得到结果</p>
 <p><img src="http://ox3grgjnx.bkt.clouddn.com/DBMSSAS_Assignment_7-003.png" alt="running result"></p>
 <hr>
-<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2>]]></content>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li>第一问当中条件约束缺少，会导致数据库运行很多不必要内容甚至卡死，例如以下例子，这个trigger会在每一次插入之后扫描整个数据库</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">CREATE</span> <span class="keyword">TRIGGER</span> ssexTrig</div><div class="line"><span class="keyword">ON</span> studentb <span class="keyword">AFTER</span> <span class="keyword">INSERT</span></div><div class="line"><span class="keyword">AS</span></div><div class="line"><span class="keyword">BEGIN</span></div><div class="line">	<span class="keyword">UPDATE</span> studentb</div><div class="line">		<span class="keyword">SET</span> ssex=<span class="string">'M'</span></div><div class="line">		<span class="keyword">WHERE</span> ssex=<span class="string">'男'</span>;</div><div class="line">	<span class="keyword">UPDATE</span> studentb</div><div class="line">		<span class="keyword">SET</span> ssex=<span class="string">'F'</span></div><div class="line">		<span class="keyword">WHERE</span> ssex=<span class="string">'女'</span>;</div><div class="line"><span class="keyword">END</span></div></pre></td></tr></table></figure>
+]]></content>
     
     <summary type="html">
     
