@@ -341,7 +341,7 @@
     <link href="http://mingotang.github.io/2017/10/10/Sharing/"/>
     <id>http://mingotang.github.io/2017/10/10/Sharing/</id>
     <published>2017-10-10T06:31:32.000Z</published>
-    <updated>2017-12-11T06:29:51.372Z</updated>
+    <updated>2017-12-22T01:07:14.578Z</updated>
     
     <content type="html"><![CDATA[<p>机器学习连载系列：</p>
 <ol>
@@ -376,6 +376,8 @@
 <li><a href="http://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&amp;mid=2247485672&amp;idx=1&amp;sn=808f895cdec633929664a87259ea508d&amp;chksm=97ea228da09dab9b4c75c3f1b5b811771c7de10bcaa6482bb21ab316e0dfa5fae96a9fbeb4d4&amp;scene=21#wechat_redirect" target="_blank" rel="external">机器学习(29)之奇异值分解SVD原理与应用详解</a></li>
 <li><a href="https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&amp;mid=2247485702&amp;idx=2&amp;sn=7ee1e469774160f7063ecc1d79e02804&amp;chksm=97ea2363a09daa7523e36e06d64179bac82905dd4832a52ef7fbfd13a2ef5127801137742914&amp;scene=21#wechat_redirect" target="_blank" rel="external">机器学习(30)之线性判别分析(LDA)原理详解</a></li>
 <li><a href="https://mp.weixin.qq.com/s/zD5hwBmMmSxzTj-3YzZKdg" target="_blank" rel="external">机器学习(31)之频繁集挖掘FP Tree详解</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&amp;mid=2247485758&amp;idx=1&amp;sn=01f4799f0d6846282e09df2111924abc&amp;chksm=97ea235ba09daa4da7fb912ae98ae41cb9d9d07e52e615ac9d2b64e9b08d469aaa10fa9640c7&amp;scene=21#wechat_redirect" target="_blank" rel="external">机器学习(32)之典型相关性分析(CCA)详解</a></li>
+<li><a href="https://mp.weixin.qq.com/s/ZHglPHugPhPPO5_aH4MLUQ" target="_blank" rel="external">机器学习(33)之局部线性嵌入(LLE)【降维】总结</a></li>
 </ol>
 <p>数据分析书-入门篇</p>
 <ul>
