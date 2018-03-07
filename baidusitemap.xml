@@ -5,11 +5,28 @@
     
   <url>
     <loc>http://mingotang.github.io/2018/02/28/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E5%8F%8A%E5%BA%94%E7%94%A8/</loc>
-    <lastmod>2018-02-28T13:10:59.883Z</lastmod>
+    <lastmod>2018-03-07T12:44:38.979Z</lastmod>
     <data>
         <display>
         <title>数据库基础及应用</title>
         <pubTime>2018-02-28T03:09:18.000Z</pubTime>
+        
+        <tag>TA</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2018/03/06/PADBS-Assignment01/</loc>
+    <lastmod>2018-03-07T12:44:23.033Z</lastmod>
+    <data>
+        <display>
+        <title>PADBS Assignment01</title>
+        <pubTime>2018-03-06T12:57:09.000Z</pubTime>
         
         <tag>TA</tag>
          
@@ -27,6 +44,23 @@
         <display>
         <title>Sharing</title>
         <pubTime>2017-10-10T06:31:32.000Z</pubTime>
+        
+        <tag>COLLECTION</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/28/Python-%E8%B5%84%E6%BA%90%E5%8C%85%E5%A4%A7%E5%85%A8/</loc>
+    <lastmod>2017-10-01T12:59:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python 资源包大全</title>
+        <pubTime>2017-09-28T08:59:46.000Z</pubTime>
         
         <tag>COLLECTION</tag>
          
@@ -63,6 +97,91 @@
         <pubTime>2015-10-19T02:34:12.000Z</pubTime>
         
         <tag>Notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/07/Git-Cheat-Sheet/</loc>
+    <lastmod>2017-09-28T08:08:40.000Z</lastmod>
+    <data>
+        <display>
+        <title>Git Cheat Sheet</title>
+        <pubTime>2017-09-07T15:00:21.000Z</pubTime>
+        
+        <tag>Notes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/08/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%92%8C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%86%E5%9F%9F%E5%B8%B8%E7%94%A8%E7%9A%84Python%E5%BA%93/</loc>
+    <lastmod>2017-09-25T03:26:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>数据科学和机器学习领域常用的 Python 库</title>
+        <pubTime>2017-09-08T08:02:32.000Z</pubTime>
+        
+        <tag>COLLECTION</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/07/33%E6%AC%BE%E5%BC%80%E6%BA%90%E7%88%AC%E8%99%AB%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2017-09-25T03:13:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>33款开源爬虫软件工具</title>
+        <pubTime>2017-09-07T13:53:19.000Z</pubTime>
+        
+        <tag>COLLECTION</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/06/%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/</loc>
+    <lastmod>2017-09-25T03:12:59.000Z</lastmod>
+    <data>
+        <display>
+        <title>数据集下载链接汇总</title>
+        <pubTime>2017-09-06T07:04:43.000Z</pubTime>
+        
+        <tag>COLLECTION</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://mingotang.github.io/2017/09/09/%E4%B8%8D%E8%A6%81%E8%AE%A9%E9%B1%BC%E5%8E%BB%E5%AD%A6%E7%88%AC%E6%A0%91/</loc>
+    <lastmod>2017-09-09T03:32:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>不要让鱼去学爬树</title>
+        <pubTime>2017-09-09T03:29:06.000Z</pubTime>
+        
+        <tag>Blog</tag>
          
          
            
