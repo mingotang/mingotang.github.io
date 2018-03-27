@@ -5,7 +5,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://mingotang.github.io/"/>
-  <updated>2018-03-27T07:29:35.431Z</updated>
+  <updated>2018-03-27T07:32:12.300Z</updated>
   <id>http://mingotang.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>DBMSSAS Assignment4</title>
+    <title>PADBS Assignment4</title>
     <link href="http://mingotang.github.io/2018/03/27/PADBS-Assignment04/"/>
     <id>http://mingotang.github.io/2018/03/27/PADBS-Assignment04/</id>
     <published>2018-03-27T05:29:49.000Z</published>
-    <updated>2018-03-27T07:29:35.431Z</updated>
+    <updated>2018-03-27T07:32:12.300Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>
 <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>Student – Course<br>In Student-Course database design, there is a given relation:<br><em>SC(sno, sname, sdept, deptaddr, phones, sports, cno, cname, grade)</em></p>
@@ -229,7 +229,7 @@
     <link href="http://mingotang.github.io/2018/02/28/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80%E5%8F%8A%E5%BA%94%E7%94%A8/"/>
     <id>http://mingotang.github.io/2018/02/28/数据库基础及应用/</id>
     <published>2018-02-28T03:09:18.000Z</published>
-    <updated>2018-03-07T12:44:38.979Z</updated>
+    <updated>2018-03-27T07:33:06.075Z</updated>
     
     <content type="html"><![CDATA[<p>数据库基础及应用课程信息</p>
 <a id="more"></a>
@@ -271,7 +271,9 @@
 <p>作业提交记录：<strong><a href="https://www.icloud.com/numbers/0DALr66Q6nBnH7oCcnK_d6uLw" target="_blank" rel="external">点此查看作业提交记录</a></strong></p>
 <h2 id="作业参考答案"><a href="#作业参考答案" class="headerlink" title="作业参考答案"></a><em>作业参考答案</em></h2><p>有时候这个页面没有变化请删除cookies或者刷新，作业参考答案会在作业截止时间之后不久放出。</p>
 <ul>
-<li><a href="">Assignment 01 (2018年03月05日8点前提交)</a></li>
+<li><a href="http://mingotang.website/2018/03/06/PADBS-Assignment01/" target="_blank" rel="external">Assignment 01</a></li>
+<li><a href="http://mingotang.website/2018/03/13/PADBS-Assignment02/" target="_blank" rel="external">Assignment 02</a></li>
+<li><a href="http://mingotang.website/2018/03/27/PADBS-Assignment04/" target="_blank" rel="external">Assignment 04</a></li>
 </ul>
 <h2 id="关于本页面"><a href="#关于本页面" class="headerlink" title="关于本页面"></a><em>关于本页面</em></h2><p>本页面使用 GitHub Page 项目实现，网页承载力比较差（毕竟是免费的），所以载入时间较长请谅解。</p>
 ]]></content>
