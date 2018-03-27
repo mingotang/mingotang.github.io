@@ -5,7 +5,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://mingotang.github.io/"/>
-  <updated>2018-03-07T12:44:23.033Z</updated>
+  <updated>2018-03-27T07:29:35.431Z</updated>
   <id>http://mingotang.github.io/</id>
   
   <author>
@@ -14,6 +14,188 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DBMSSAS Assignment4</title>
+    <link href="http://mingotang.github.io/2018/03/27/PADBS-Assignment04/"/>
+    <id>http://mingotang.github.io/2018/03/27/PADBS-Assignment04/</id>
+    <published>2018-03-27T05:29:49.000Z</published>
+    <updated>2018-03-27T07:29:35.431Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>Student – Course<br>In Student-Course database design, there is a given relation:<br><em>SC(sno, sname, sdept, deptaddr, phones, sports, cno, cname, grade)</em></p>
+<ol>
+<li>Analyze the relation by using 2nd, 3rd, BCNF and 4th NF. (Do not decompose relation here)</li>
+<li>Decompose the relation to satisfy BCNF and 4th NF.</li>
+</ol>
+<hr>
+<h2 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h2><h4 id="Analyze-the-relation-by-using-2nd-3rd-BCNF-and-4th-NF"><a href="#Analyze-the-relation-by-using-2nd-3rd-BCNF-and-4th-NF" class="headerlink" title="Analyze the relation by using 2nd, 3rd, BCNF and 4th NF."></a><strong>Analyze the relation by using 2nd, 3rd, BCNF and 4th NF.</strong></h4><p>在关系 SC 中，所有的依赖关系如下：</p>
+<ul>
+<li>Functional Dependencies:<ul>
+<li>sno &rarr; sname</li>
+<li>sno &rarr; sdept</li>
+<li>cno &rarr; cname</li>
+<li>sdept &rarr; deptaddr</li>
+<li>(sno, cno) <em>F</em>&rarr; grade</li>
+</ul>
+</li>
+<li>Partial Functional Dependencies （所有FD中除了最后一个都可以成为PFD）<ul>
+<li>(sno, cno) <em>P</em>&rarr; sname</li>
+<li>(sno, cno) <em>P</em>&rarr; sdept</li>
+<li>…</li>
+</ul>
+</li>
+<li>如果每一个sno的phones和sports只有一个值<ul>
+<li>sno &rarr; phones</li>
+<li>sno &rarr; sports</li>
+</ul>
+</li>
+<li>如果每个sno有多个phones或者多个sports：<ul>
+<li>(sno, phones) <em>F</em>&rarr; phones</li>
+<li>(sno, sports) <em>F</em>&rarr; sports</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>本作业中phones和sports按照存在多个可能值处理</p>
+</blockquote>
+<p><strong>- 2nd Normal Form：</strong></p>
+<p>第二范式可以表述为：</p>
+<ul>
+<li>Key <em>F</em>&rarr;  non-key attributes</li>
+<li>No <em>P</em>&rarr; exists</li>
+</ul>
+<p>上述SC依赖关系当中，存在四种关键词的可能：</p>
+<ul>
+<li>sno：可以看到FD sno <em>F</em>&rarr; cno 是不存在的</li>
+<li>cno：同样的，cno <em>F</em>&rarr; sno 也是不存在的</li>
+<li>sno, cno：存在 (sno, cno) <em>P</em>&rarr; sname</li>
+<li>sno, cno, phones, sports：存在 (sno, cno, phones, sports) <em>P</em>&rarr; sname</li>
+</ul>
+<blockquote>
+<p>从依赖关系的左侧属性组成键的角度来说，SC的Key应该是(sno, cno, phones, sports)，且该键唯一。</p>
+</blockquote>
+<p>因此关系SC不符合第二范式</p>
+<p><strong>- 3rd Normal Form：</strong></p>
+<p>第三范式可以表述为：</p>
+<ul>
+<li>Do not exist key X: If X &rarr; Y, and Y &#8603; X, then Y &rarr; Z.<ul>
+<li>X: Key</li>
+<li>Y: Set of attributes</li>
+<li>Z: Set of non-key attributes</li>
+</ul>
+</li>
+</ul>
+<p>上述SC依赖关系当中，存在FD：</p>
+<ul>
+<li>(sno, cno) <em>P</em>&rarr; sdept</li>
+<li>sdept &rarr; deptaddr<br>或者：</li>
+<li>(sno, cno) <em>P</em>&rarr; sno</li>
+<li>sno &rarr; sname</li>
+</ul>
+<p>因此关系SC不符合第三范式</p>
+<p><strong>- Boyce-Codd Normal Form</strong></p>
+<p>BCNF可以表述为：</p>
+<ul>
+<li>whenever X &rarr; A is a nontrivial FD that holds in Relation, X is a superkey.</li>
+</ul>
+<p>上述SC依赖关系当中，Key是(sno, cno, phones, sports)，同时存在 cno &rarr; cname 等FD且cno是子集</p>
+<p>因此关系SC不符合BCNF</p>
+<p><strong>- 4th Normal Form：</strong></p>
+<p>第四范式可以表述为：</p>
+<ul>
+<li>whenever X &rarr;&rarr; Y is a nontrivial MVD, then X is a superkey.<ul>
+<li>Nontrivial MVD  means that: Y is not a subset of X, and X  and Y  are not, together, all the attributes.</li>
+<li>Note that the definition of “superkey” still depends on FD’s only.</li>
+</ul>
+</li>
+</ul>
+<p>SC的依赖关系中，存在 sno &rarr;&rarr; phones 和 sno &rarr;&rarr; sports 这两个 nontrivial MVD，同时其他FD只需要满足第四范式表述中的两个附属条件就可以是MVD），但是 sno 不是键的超集。</p>
+<p>因此关系SC不符合第四范式</p>
+<h4 id="Decompose-the-relation-to-satisfy-BCNF-and-4th-NF"><a href="#Decompose-the-relation-to-satisfy-BCNF-and-4th-NF" class="headerlink" title="Decompose the relation to satisfy BCNF and 4th NF"></a><strong>Decompose the relation to satisfy BCNF and 4th NF</strong></h4><ul>
+<li>Student(<u>sno</u>, sname, sdept)</li>
+<li>Course(<u>cno</u>, cname)</li>
+<li>SC(<u>sno</u>, <u>cno</u>, grade)</li>
+<li>Sports(<u>sno</u>, <u>sports</u>)</li>
+<li>Phones(<u>sno</u>, <u>phones</u>)</li>
+<li>Departments(<u>sdept</u>, deptaddr)</li>
+</ul>
+<p>或者查看胡老师给出的参考答案。</p>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h2&gt;&lt;p&gt;Student – Course&lt;br&gt;In Student-C
+    
+    </summary>
+    
+    
+      <category term="TA" scheme="http://mingotang.github.io/tags/TA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PADBS Assignment02</title>
+    <link href="http://mingotang.github.io/2018/03/13/PADBS-Assignment02/"/>
+    <id>http://mingotang.github.io/2018/03/13/PADBS-Assignment02/</id>
+    <published>2018-03-13T14:18:09.000Z</published>
+    <updated>2018-03-13T13:20:56.045Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>Design a Student – Course Database<br>Draw E/R Diagram</p>
+<hr>
+<h2 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h2><p>实体：学生 Student</p>
+<ul>
+<li>学号 Sno（关键字，需要加下划线）</li>
+<li>姓名 Sname</li>
+<li>性别 Ssex</li>
+<li>年龄 Sage</li>
+<li>学院 Sdept</li>
+</ul>
+<blockquote>
+<p>注意：每个实体（表）都需要一个关键字来进行索引</p>
+</blockquote>
+<p>实体：课程 Course</p>
+<ul>
+<li>课程编号 Cno（关键字，需要加下划线）</li>
+<li>课程名称 Cname</li>
+<li>先修课程 Cpno</li>
+<li>学分 Ccredit</li>
+</ul>
+<p>关系：选课 SC</p>
+<ul>
+<li>分数 Grade</li>
+</ul>
+<p>实体对应关系：</p>
+<ul>
+<li>实体学生与实体课程形成关系选课</li>
+</ul>
+<p><img src="http://ox3grgjnx.bkt.clouddn.com/DBMSSAS%20Assignment3%20001.png" alt="图见 DBMSSAS Assignment 3 中的题目"></p>
+<hr>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ol>
+<li>实体的属性当中没有键<ul>
+<li>键用下划线标出</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>谬误更正：之前写的关系没有属性就没有必要记录在SQL当中，这句话是错误的，假设SC没有属性Grade，那么SC(<u>Sno</u>, <u>Cno</u>)，虽然Sno和Cno全是外键，但是SC仍然是有必要记录的，因为没有SC我们就没有办法知道到底谁选择了什么课，SC这个时候就是表Student和表Course键组合的子集。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h2&gt;&lt;p&gt;Design a Student – Course Databa
+    
+    </summary>
+    
+    
+      <category term="TA" scheme="http://mingotang.github.io/tags/TA/"/>
+    
+  </entry>
   
   <entry>
     <title>PADBS Assignment01</title>
